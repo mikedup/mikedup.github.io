@@ -1,6 +1,14 @@
 /* State styles */
 
 // Header modules
+.loc-trigger.active:before {
+	background: #fff;
+	border-right: 1px solid #ccc;
+	color: $headerColor;
+}
+.loc-list.active {
+	display: block;
+}
 .header-nav.active {
 	@media only screen and (max-width: 959px) {
 		display: block !important;

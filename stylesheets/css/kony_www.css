@@ -50,6 +50,8 @@ header {
   header a, header i {
     color: #edf2f8;
     text-decoration: none; }
+  header a:hover {
+    color: #edf2f8; }
   @media only screen and (max-width: 959px) {
     header {
       min-height: 55px;
@@ -79,7 +81,7 @@ header {
       width: 14% !important; } }
 
 .header-contact {
-  padding-top: 5px;
+  padding-top: 0;
   padding-right: 5px; }
   .header-contact ul {
     float: right;
@@ -89,15 +91,38 @@ header {
       display: inline-block;
       border-left: 1px solid rgba(255, 255, 255, 0.25);
       list-style-type: none;
-      padding: 0 15px; }
+      padding: 0 15px;
+      position: relative; }
     .header-contact ul li:first-child {
-      border: none; }
+      border: none;
+      padding-right: 5px;
+      padding-left: 0; }
     .header-contact ul li:last-child a {
       color: #00a3d9; }
+  .header-contact .loc-trigger:before {
+    border-right: 1px solid #113457;
+    cursor: pointer;
+    margin-right: -5px;
+    padding: 5px 8px; }
+  .header-contact .loc-list {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    display: none;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 310px;
+    z-index: 3; }
+    .header-contact .loc-list li {
+      display: block;
+      padding: 5px; }
+      .header-contact .loc-list li a, .header-contact .loc-list li i {
+        color: #00a3d9; }
   .header-contact input {
     border: none; }
-  .header-contact .loc-list {
-    display: none; }
   @media only screen and (max-width: 959px) {
     .header-contact {
       display: none; } }
@@ -106,7 +131,7 @@ header {
   background: #415d79;
   display: inline-block;
   float: right;
-  margin: 4px 12px 0 0;
+  margin: 9px 15px 0 0;
   padding: 2px 5px 2px 15px;
   overflow: hidden; }
   .header-search div {
@@ -118,7 +143,7 @@ header {
 .header-search-input {
   background: #415d79;
   color: #edf2f8;
-  font-size: 15px;
+  font-size: 14px;
   margin-right: -3px;
   padding: 3px 0; }
 
@@ -174,7 +199,8 @@ header {
   padding: 10px 0 0 0;
   position: absolute;
   top: 48px;
-  width: 250px; }
+  width: 250px;
+  z-index: 2; }
   .header-nav li > ul li {
     display: block;
     margin: 0;
@@ -373,7 +399,7 @@ header {
       padding: 20px; }
   .header-nav .header-contact li:first-child, .header-nav .header-contact li:nth-child(3) {
     border-left: none; }
-  .header-nav #location-list {
+  .header-nav .loc-trigger {
     display: none; } }
 
 .header-nav-trigger {
@@ -395,6 +421,14 @@ header + .container {
   min-height: 400px; }
 
 /* State styles */
+.loc-trigger.active:before {
+  background: #fff;
+  border-right: 1px solid #ccc;
+  color: #113457; }
+
+.loc-list.active {
+  display: block; }
+
 @media only screen and (max-width: 959px) {
   .header-nav.active {
     display: block !important; }

@@ -23,6 +23,9 @@ header {
 		color: #edf2f8;
 		text-decoration: none;
 	}
+	a:hover {
+		color: #edf2f8;
+	}
 	@include breakpoint(mobile-tablet) {
 		min-height: 55px;
 		position: fixed; 
@@ -67,7 +70,7 @@ header {
 // Header contact 
 .header-contact {
 	padding: {
-		top: 5px;
+		top: 0;
 		right: 5px;
 	}
 	ul { 
@@ -79,9 +82,14 @@ header {
 			border-left: 1px solid rgba(255,255,255, 0.25);
 			list-style-type: none;
 			padding: 0 15px;
+			position: relative;
 		}
 		li:first-child {
 			border: none;
+			padding: {
+				right: 5px;
+				left: 0;
+			}
 		}
 		li:last-child {
 			a {
@@ -89,11 +97,36 @@ header {
 			}
 		}
 	}
-	input {
-		border: none;
+	.loc-trigger:before {
+		border-right: 1px solid $headerColor;
+		cursor: pointer;
+		margin-right: -5px;
+		padding: 5px 8px;
 	}
 	.loc-list {
+		background-color: #fff;
+		border: {
+			right: 1px solid #ccc;
+			bottom: 1px solid #ccc;
+			left: 1px solid #ccc;
+		}
 		display: none;
+		padding: 5px;
+		position: absolute; 
+		right: 0;
+		top: 15px;
+		width: 310px;
+		z-index: 3;
+		li {
+			display: block;
+			padding: 5px;
+			a, i {
+				color: $lightBlue;
+			}
+		}
+	}
+	input {
+		border: none;
 	}
 	@include breakpoint(mobile-tablet) {
 		display: none;
@@ -105,7 +138,7 @@ header {
 	background: #415d79;
 	display: inline-block;
 	float: right;
-	margin: 4px 12px 0 0;
+	margin: 9px 15px 0 0;
 	padding: 2px 5px 2px 15px;
 	overflow: hidden;
 	div {
@@ -118,7 +151,7 @@ header {
 .header-search-input {
 	background: #415d79;
 	color: #edf2f8;
-	font-size: 15px;
+	font-size: 14px;
 	margin-right: -3px;
 	padding: 3px 0;
 }
@@ -188,6 +221,7 @@ header {
 		position: absolute;
 		top: 48px;
 		width: 250px;
+		z-index: 2;
 		li { 
 			display: block;
 			margin: 0;
@@ -454,7 +488,7 @@ header {
 				border-left: none;
 			}
 		}
-		#location-list {
+		.loc-trigger {
 			display: none;
 		}
 	}

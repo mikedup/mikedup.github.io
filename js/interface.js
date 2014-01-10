@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('.header-contact > ul').clone().addClass('header-contact').appendTo('.header-nav');
 	$('.header-search').clone().prependTo('.header-nav');
 
-	// Toggle Nav open/close
+	// Dropdowns
 	$('[data-js="nav-trigger"]').click(function() {
 		$(this).add('.header-nav').toggleClass('active');
 	});
@@ -21,5 +21,8 @@ $(document).ready(function() {
 			$(this).removeClass('icon-chevron-down').addClass('icon-chevron-up');
 		}
 		return false;
+	});
+	$('[data-js="loc-trigger"]').click(function() {
+		$(this).add('.loc-list').toggleClass('active');
 	});
 });
