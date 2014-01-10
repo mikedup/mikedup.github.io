@@ -33,7 +33,7 @@ header {
 		z-index: 2;
 		h1 {
 			margin-top: 10px !important;
-			width: 28% !important;
+			width: 100px !important;
 		}
 		.logo {
 			min-height: 25px;
@@ -52,17 +52,9 @@ header {
 			}
 		}
 	}
-	@include breakpoint(mobile-landscape) {
-		h1 {
-			width: 20% !important;
-		}
-	}
 	@include breakpoint(tablet) {
 		.container {
 			max-width: 748px;
-		}
-		h1 {
-			width: 14% !important;
 		}
 	}
 }
