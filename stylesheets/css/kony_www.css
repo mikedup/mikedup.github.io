@@ -37,7 +37,7 @@ header {
   width: 100%; }
   header h1 {
     float: left;
-    margin: 10px 0 0 0; }
+    margin: 20px 0 0 0; }
   header .logo {
     background: url(../../images/logo.png) left center no-repeat;
     background-size: 100%;
