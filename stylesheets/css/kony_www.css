@@ -91,7 +91,7 @@ header {
       display: inline-block;
       border-left: 1px solid rgba(255, 255, 255, 0.25);
       list-style-type: none;
-      padding: 0 15px;
+      padding: 0 10px;
       position: relative; }
     .header-contact ul li:first-child {
       border: none;
@@ -193,6 +193,8 @@ header {
     color: #113457; }
   .header-nav .current a:hover, .header-nav li:hover a:hover {
     color: #fff; }
+.header-nav .current {
+  background: #fff; }
 .header-nav li > ul {
   background: #f2f2f2;
   margin: 0;
