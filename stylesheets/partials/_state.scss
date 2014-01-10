@@ -1,1 +1,56 @@
 /* State styles */
+
+// Header modules
+.header-nav.active {
+	@media only screen and (max-width: 959px) {
+		display: block !important;
+		li {
+			display: block;
+		}
+		li.active {
+			.subnav-trigger {
+				background: #e5e5e5;
+				border-left: 1px solid #dadada;
+				z-index: 2;
+			}
+			li {
+				.subnav-trigger {
+					border: none;
+					padding: 17px 20px 18px 20px;
+					z-index: 0;
+				}
+			}
+			li.active {
+				a {
+					.subnav-trigger:before {
+						color: #fff;
+					}
+				}
+				.subnav-trigger {
+					background: #cacaca;
+					color: #fff;
+					border-left: 1px solid #c1c1c1;
+					z-index: 2;
+				}
+			}
+		}
+		li.active > ul {
+			display: block !important;
+			a .subnav-trigger:before {
+				color: $lightBlue;
+			}
+		}
+		.header-search {
+			display: block;
+		}
+		.header-contact {
+			display: block;
+		}
+	}
+}
+.header-nav-trigger.active {
+	background: #f2f2f2;
+}
+.header-nav-trigger.active:before {
+	color: $headerColor;
+}
