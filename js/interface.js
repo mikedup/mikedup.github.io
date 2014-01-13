@@ -29,6 +29,13 @@ $(document).ready(function() {
 				$(this).removeClass('icon-angle-down').addClass('icon-angle-up');
 			}
 		}
+
+		// Auto scroll to selected nav item if it is a top-level item
+		if ($(this).hasClass('icon-angle-up') || $(this).hasClass('icon-angle-down')) {
+			var selectedItemPos = $(this).closest('li').position().top;
+			$('.header-nav').animate({scrollTop: selectedItemPos});
+		}
+
 		return false;
 	});
 	$('[data-js="loc-trigger"]').click(function() {
