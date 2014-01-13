@@ -11,14 +11,23 @@ $(document).ready(function() {
 		// If the clicked trigger's dropdown is open, close dropdown and toggle icon back to default
 		if ($(this).parent().parent().hasClass('active')) {
 			$(this).parent().parent().removeClass('active');
-			$(this).removeClass('icon-chevron-up').addClass('icon-chevron-down');
+			if ($(this).hasClass('icon-double-angle-up')) {
+				$(this).removeClass('icon-double-angle-up').addClass('icon-double-angle-down');
+			} else {
+				$(this).removeClass('icon-angle-up').addClass('icon-angle-down');
+			}
 		} 
 		// If the clicked trigger's dropdown is closed, close any open dropdowns and open the clicked
 		else {
 			$(this).closest('ul').find('.active').removeClass('active');
-			$(this).closest('ul').find('.icon-chevron-up').removeClass('icon-chevron-up').addClass('icon-chevron-down');
+			$(this).closest('ul').find('.icon-angle-up').removeClass('icon-angle-up').addClass('icon-angle-down');
+			$(this).closest('ul').find('.icon-double-angle-up').removeClass('icon-double-angle-up').addClass('icon-double-angle-down');
 			$(this).parent().parent().addClass('active');
-			$(this).removeClass('icon-chevron-down').addClass('icon-chevron-up');
+			if ($(this).hasClass('icon-double-angle-down')) {
+				$(this).removeClass('icon-double-angle-down').addClass('icon-double-angle-up');
+			} else {
+				$(this).removeClass('icon-angle-down').addClass('icon-angle-up');
+			}
 		}
 		return false;
 	});
