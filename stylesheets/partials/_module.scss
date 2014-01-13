@@ -122,6 +122,10 @@ header {
 				color: $lightBlue;
 			}
 		}
+		li:last-child a {
+			background: none;
+			padding: 0;
+		}
 	}
 	input {
 		border: none;
