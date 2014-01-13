@@ -372,7 +372,7 @@ header {
         border-left: 1px solid #ddd;
         color: #00a3d9;
         display: inline-block;
-        padding: 15px 20px 15px 20px;
+        padding: 15px 19px 15px 19px;
         position: absolute;
         right: 0;
         top: 0; }
@@ -462,7 +462,7 @@ header + .container {
       z-index: 2; }
     .header-nav.active li.active li .subnav-trigger {
       border: none;
-      padding: 16px 20px 17px 20px;
+      padding: 16px 19px 17px 19px;
       z-index: 0; }
     .header-nav.active li.active li.active a .subnav-trigger:before {
       color: #fff; }
