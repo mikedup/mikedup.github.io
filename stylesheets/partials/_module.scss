@@ -84,8 +84,14 @@ header {
 			}
 		}
 		li:last-child {
+			border: none;
 			a {
-				color: $lightBlue;
+				background: $lightBlue;
+				border-radius: 3px;
+				padding: 7px 15px;
+			}
+			a:hover {
+				text-decoration: underline;
 			}
 		}
 	}
@@ -170,6 +176,7 @@ header {
 	ul {
 		float: right;
 		margin: 10px 0 0 0;
+		position: relative;
 	}
 	li {
 		border-radius: 4px 4px 0 0;
@@ -479,8 +486,28 @@ header {
 					padding: 20px;
 				}
 			}
-			li:first-child, li:nth-child(3) {
+			li:first-child, li:last-child {
 				border-left: none;
+			}
+			li:nth-child(3) {
+				display: none;
+			}
+			li:last-child {
+				background: #dbdbdb;
+				padding: 10px;
+				width: 100%;
+				a {
+					background: $lightBlue;
+					border-radius: 3px;
+					color: #fff;
+					max-width: 320px;
+					margin: 0 auto;
+				}
+			}
+		}
+		@include breakpoint(tablet) {
+			.header-contact li:last-child a {
+				max-width: 220px;
 			}
 		}
 		.loc-trigger {

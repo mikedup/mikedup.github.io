@@ -92,8 +92,14 @@ header {
       border: none;
       padding-right: 5px;
       padding-left: 0; }
-    .header-contact ul li:last-child a {
-      color: #00a3d9; }
+    .header-contact ul li:last-child {
+      border: none; }
+      .header-contact ul li:last-child a {
+        background: #00a3d9;
+        border-radius: 3px;
+        padding: 7px 15px; }
+      .header-contact ul li:last-child a:hover {
+        text-decoration: underline; }
   .header-contact .loc-trigger:before {
     border-right: 1px solid #113457;
     cursor: pointer;
@@ -161,7 +167,8 @@ header {
 
 .header-nav ul {
   float: right;
-  margin: 10px 0 0 0; }
+  margin: 10px 0 0 0;
+  position: relative; }
 .header-nav li {
   border-radius: 4px 4px 0 0;
   display: inline-block;
@@ -394,10 +401,25 @@ header {
       background: #dbdbdb;
       font-size: 0.875em;
       padding: 20px; }
-  .header-nav .header-contact li:first-child, .header-nav .header-contact li:nth-child(3) {
+  .header-nav .header-contact li:first-child, .header-nav .header-contact li:last-child {
     border-left: none; }
+  .header-nav .header-contact li:nth-child(3) {
+    display: none; }
+  .header-nav .header-contact li:last-child {
+    background: #dbdbdb;
+    padding: 10px;
+    width: 100%; }
+    .header-nav .header-contact li:last-child a {
+      background: #00a3d9;
+      border-radius: 3px;
+      color: #fff;
+      max-width: 320px;
+      margin: 0 auto; }
   .header-nav .loc-trigger {
     display: none; } }
+@media only screen and (max-width: 959px) and (min-width: 768px) and (max-width: 959px) {
+  .header-nav .header-contact li:last-child a {
+    max-width: 220px; } }
 
 .header-nav-trigger {
   color: white;
