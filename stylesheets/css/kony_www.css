@@ -376,7 +376,7 @@ header {
       top: 0; }
     .header-nav .subnav-trigger:before {
       color: #00a3d9;
-      font-size: 14px; } }
+      font-size: 21px; } }
 @media only screen and (max-width: 767px) {
   .header-nav {
     width: 100% !important; } }
