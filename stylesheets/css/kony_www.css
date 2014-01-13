@@ -335,7 +335,8 @@ header {
           color: #00a3d9;
           font-size: 1em;
           padding-top: 17px;
-          padding-bottom: 17px; }
+          padding-bottom: 17px;
+          padding-left: 25px; }
         .header-nav li > ul li a:hover {
           background: none; }
       .header-nav li > ul li:hover {
