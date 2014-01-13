@@ -540,3 +540,54 @@ header + .container {
 	min-height: 400px;
 }
 
+
+//Footer modules
+footer {
+	background-color: #EDF2F8;
+	border-top: 1px solid #959595;
+	padding: 35px 0 55px 0;
+	p {
+		color: #586977;
+		font-size: em(12px);
+	}
+}
+
+.footer-contact {
+	padding-left: 0;
+	li {
+		border-left: 1px solid #586977;
+		display: inline-block;
+		line-height: 17px;
+		padding: 0 12px;
+		a {
+			font-size: em(18px);
+			text-decoration: none;
+		}
+		a[href^="tel:"] {
+			color: #586977;
+		}
+	}
+	li:first-child{
+		border-left: none;
+		padding-left: 0;
+		
+	}
+}
+
+.footer-social {
+	float: right;
+	padding: 0;
+	li {
+		display: inline-block;
+		padding-left: 18px;
+		a {
+			background-color: #ccc;
+			display: block;
+			height: 27px;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			width: 27px;
+		}
+	}
+}
