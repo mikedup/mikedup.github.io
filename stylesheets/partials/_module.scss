@@ -550,6 +550,11 @@ footer {
 		color: #586977;
 		font-size: em(12px);
 	}
+	@include breakpoint(tablet) {
+		.container div:last-child{
+		margin-top: -40px;
+	}
+	} 
 }
 
 .footer-contact {
@@ -570,7 +575,6 @@ footer {
 	li:first-child{
 		border-left: none;
 		padding-left: 0;
-		
 	}
 }
 
@@ -635,5 +639,11 @@ footer {
 	}
 	.google a:hover {
 		background-position: -217px -28px;
+	}
+	@include breakpoint(tablet) {
+		padding-left: 50px;
+		.twitter, .facebook, .linkedin {
+			padding-bottom: 15px;
+		}
 	}
 }

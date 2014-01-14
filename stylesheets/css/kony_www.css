@@ -449,6 +449,9 @@ footer {
   footer p {
     color: #586977;
     font-size: 0.75em; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    footer .container div:last-child {
+      margin-top: -40px; } }
 
 .footer-contact, .footer-fineprint {
   padding-left: 0; }
@@ -508,6 +511,11 @@ footer {
     background-position: -217px 0px; }
   .footer-social .google a:hover {
     background-position: -217px -28px; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .footer-social {
+      padding-left: 50px; }
+      .footer-social .twitter, .footer-social .facebook, .footer-social .linkedin {
+        padding-bottom: 15px; } }
 
 /* State styles */
 .loc-trigger.active:before {
