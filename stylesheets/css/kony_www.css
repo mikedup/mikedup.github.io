@@ -450,36 +450,64 @@ footer {
     color: #586977;
     font-size: 0.75em; }
 
-.footer-contact {
+.footer-contact, .footer-fineprint {
   padding-left: 0; }
-  .footer-contact li {
+  .footer-contact li, .footer-fineprint li {
     border-left: 1px solid #586977;
     display: inline-block;
     line-height: 17px;
     padding: 0 12px; }
-    .footer-contact li a {
+    .footer-contact li a, .footer-fineprint li a {
       font-size: 1.125em;
       text-decoration: none; }
-    .footer-contact li a[href^="tel:"] {
+    .footer-contact li a[href^="tel:"], .footer-fineprint li a[href^="tel:"] {
       color: #586977; }
-  .footer-contact li:first-child {
+  .footer-contact li:first-child, .footer-fineprint li:first-child {
     border-left: none;
     padding-left: 0; }
 
+.footer-fineprint li {
+  line-height: 12px; }
+  .footer-fineprint li a {
+    font-size: 0.75em; }
+
 .footer-social {
   float: right;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 0; }
   .footer-social li {
     display: inline-block;
     padding-left: 18px; }
     .footer-social li a {
-      background-color: #ccc;
+      background: url(../../images/socialicons.png) no-repeat;
       display: block;
-      height: 27px;
+      height: 28px;
       overflow: hidden;
       text-indent: 100%;
       white-space: nowrap;
-      width: 27px; }
+      width: 28px; }
+  .footer-social .twitter a:hover {
+    background-position: 0 -28px; }
+  .footer-social .facebook a {
+    background-position: -43px 0; }
+  .footer-social .facebook a:hover {
+    background-position: -43px -28px; }
+  .footer-social .linkedin a {
+    background-position: -87px 0px; }
+  .footer-social .linkedin a:hover {
+    background-position: -87px -28px; }
+  .footer-social .youtube a {
+    background-position: -131px 0px; }
+  .footer-social .youtube a:hover {
+    background-position: -131px -28px; }
+  .footer-social .slideshare a {
+    background-position: -173px 0px; }
+  .footer-social .slideshare a:hover {
+    background-position: -173px -28px; }
+  .footer-social .google a {
+    background-position: -217px 0px; }
+  .footer-social .google a:hover {
+    background-position: -217px -28px; }
 
 /* State styles */
 .loc-trigger.active:before {
