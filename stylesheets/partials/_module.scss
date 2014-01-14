@@ -554,6 +554,9 @@ footer {
 		.container div:last-child{
 		margin-top: -40px;
 	}
+	}
+	@include breakpoint(mobile-portrait) {
+		text-align: center;
 	} 
 }
 
@@ -575,6 +578,17 @@ footer {
 	li:first-child{
 		border-left: none;
 		padding-left: 0;
+	}
+	li:last-child{
+		padding-right: 0;
+	}
+	@include breakpoint(mobile-portrait) {
+		li {
+			a {
+			font-size: em(12px);
+			line-height: 12px;
+			}
+		}
 	}
 }
 
@@ -646,4 +660,15 @@ footer {
 			padding-bottom: 15px;
 		}
 	}
+	@include breakpoint(mobile-portrait) {
+		float: none;
+		margin: {
+			right: auto;
+			left: auto;
+		}
+		width: 276px;
+		li:first-child{
+		padding-left: 0;
+		}
+	} 
 }

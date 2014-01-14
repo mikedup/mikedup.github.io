@@ -452,6 +452,9 @@ footer {
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     footer .container div:last-child {
       margin-top: -40px; } }
+  @media only screen and (max-width: 767px) {
+    footer {
+      text-align: center; } }
 
 .footer-contact, .footer-fineprint {
   padding-left: 0; }
@@ -468,6 +471,12 @@ footer {
   .footer-contact li:first-child, .footer-fineprint li:first-child {
     border-left: none;
     padding-left: 0; }
+  .footer-contact li:last-child, .footer-fineprint li:last-child {
+    padding-right: 0; }
+  @media only screen and (max-width: 767px) {
+    .footer-contact li a, .footer-fineprint li a {
+      font-size: 0.75em;
+      line-height: 12px; } }
 
 .footer-fineprint li {
   line-height: 12px; }
@@ -516,6 +525,14 @@ footer {
       padding-left: 50px; }
       .footer-social .twitter, .footer-social .facebook, .footer-social .linkedin {
         padding-bottom: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .footer-social {
+      float: none;
+      margin-right: auto;
+      margin-left: auto;
+      width: 276px; }
+      .footer-social li:first-child {
+        padding-left: 0; } }
 
 /* State styles */
 .loc-trigger.active:before {
