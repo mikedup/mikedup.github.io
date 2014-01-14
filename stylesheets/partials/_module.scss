@@ -7,7 +7,7 @@ header {
 	width: 100%;
 	h1 {
 		float: left;
-		margin: 20px 0 0 0;
+		margin: 32px 0 0 0;
 	}
 	.logo {
 		background: url(../../images/logo.png) left center no-repeat;
@@ -61,10 +61,7 @@ header {
 
 // Header contact 
 .header-contact {
-	padding: {
-		top: 0;
-		right: 5px;
-	}
+	padding-right: 10px;
 	ul { 
 		float: right;
 		margin: 12px 0;
@@ -122,6 +119,10 @@ header {
 				color: $lightBlue;
 			}
 		}
+		li:last-child a {
+			background: none;
+			padding: 0;
+		}
 	}
 	input {
 		border: none;
@@ -136,7 +137,7 @@ header {
 	background: #415d79;
 	display: inline-block;
 	float: right;
-	margin: 9px 15px 0 0;
+	margin: 10px 15px 0 0;
 	padding: 2px 5px 2px 15px;
 	overflow: hidden;
 	div {
@@ -173,6 +174,7 @@ header {
 
 // Primary navigation
 .header-nav {
+	margin-top: -25px;
 	position: relative;
 	ul {
 		float: right;
@@ -341,6 +343,7 @@ header {
 	@include breakpoint(mobile-tablet) {
 		background: #f2f2f2;
 		display: none !important;
+		margin-top: 0;
 		max-height: 385px;
 		overflow-y: scroll;
 		padding: 5px 0 0 0;
@@ -540,7 +543,6 @@ header + .container {
 	min-height: 400px;
 }
 
-
 //Footer modules
 footer {
 	background-color: #EDF2F8;
@@ -672,3 +674,4 @@ footer {
 		}
 	} 
 }
+

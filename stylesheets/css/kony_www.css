@@ -37,7 +37,7 @@ header {
   width: 100%; }
   header h1 {
     float: left;
-    margin: 20px 0 0 0; }
+    margin: 32px 0 0 0; }
   header .logo {
     background: url(../../images/logo.png) left center no-repeat;
     background-size: 100%;
@@ -76,8 +76,7 @@ header {
       max-width: 748px; } }
 
 .header-contact {
-  padding-top: 0;
-  padding-right: 5px; }
+  padding-right: 10px; }
   .header-contact ul {
     float: right;
     margin: 12px 0;
@@ -122,6 +121,9 @@ header {
       padding: 5px; }
       .header-contact .loc-list li a, .header-contact .loc-list li i {
         color: #00a3d9; }
+    .header-contact .loc-list li:last-child a {
+      background: none;
+      padding: 0; }
   .header-contact input {
     border: none; }
   @media only screen and (max-width: 959px) {
@@ -132,7 +134,7 @@ header {
   background: #415d79;
   display: inline-block;
   float: right;
-  margin: 9px 15px 0 0;
+  margin: 10px 15px 0 0;
   padding: 2px 5px 2px 15px;
   overflow: hidden; }
   .header-search div {
@@ -166,6 +168,7 @@ header {
   width: 30px; }
 
 .header-nav {
+  margin-top: -25px;
   position: relative; }
   .header-nav ul {
     float: right;
@@ -294,6 +297,7 @@ header {
     .header-nav {
       background: #f2f2f2;
       display: none !important;
+      margin-top: 0;
       max-height: 385px;
       overflow-y: scroll;
       padding: 5px 0 0 0;
