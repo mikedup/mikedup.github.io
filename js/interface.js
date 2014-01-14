@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// Clone header contact and search for mobile nav so there's no need to maintain in two places
 	$('.header-contact > ul').clone().addClass('header-contact').appendTo('.header-nav');
 	$('.header-search').clone().prependTo('.header-nav');
+	$('.header-nav .header-contact').find('a[href="tel:1-888-323-9630"]').text('Call Us').attr('href', 'http://www.kony.com/about/locations');
 
 	// Dropdowns
 	$('[data-js="nav-trigger"]').click(function() {
