@@ -466,7 +466,7 @@ footer {
     border-left: 1px solid #586977;
     display: inline-block;
     line-height: 17px;
-    padding: 0 12px; }
+    padding: 0 10px; }
     .footer-contact li a, .footer-fineprint li a {
       font-size: 1.125em;
       text-decoration: none; }
@@ -493,7 +493,7 @@ footer {
   margin-bottom: 0; }
   .footer-social li {
     display: inline-block;
-    padding-left: 18px; }
+    padding-left: 15px; }
     .footer-social li a {
       background: url(../../images/socialicons.png) no-repeat;
       display: block;
