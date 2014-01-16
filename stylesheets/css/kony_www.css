@@ -217,7 +217,7 @@ header {
     position: absolute;
     top: 48px;
     width: 250px;
-    z-index: 2; }
+    z-index: 3; }
     .header-nav li > ul li {
       display: block;
       margin: 0;
@@ -454,6 +454,51 @@ header {
 @media only screen and (max-width: 959px) {
   header + .container {
     margin-top: 85px; } }
+
+.flexslider__slide-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 20px;
+  max-width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 20px; }
+  .flexslider__slide-content h3 {
+    margin: 0; }
+
+.flex-control-nav {
+  max-width: 180px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  z-index: 2; }
+  .flex-control-nav li {
+    color: #fff;
+    cursor: pointer;
+    margin: 0;
+    padding: 12px 0;
+    width: 100%; }
+  .flex-control-nav li:first-child {
+    background-color: #829aaf;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px; }
+    .flex-control-nav li:first-child:hover {
+      background-color: #7992a9; }
+  .flex-control-nav li:nth-child(2) {
+    background-color: #708596; }
+    .flex-control-nav li:nth-child(2):hover {
+      background-color: #687d8e; }
+  .flex-control-nav li:nth-child(3) {
+    background-color: #556674; }
+    .flex-control-nav li:nth-child(3):hover {
+      background-color: #4f5e6b; }
+  .flex-control-nav li:last-child {
+    background-color: #35414c;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-left-radius: 4px; }
+    .flex-control-nav li:last-child:hover {
+      background-color: #2b343d; }
 
 footer {
   background-color: #EDF2F8;

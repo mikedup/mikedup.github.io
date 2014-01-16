@@ -48,8 +48,10 @@ $(document).ready(function() {
       $('.flexslider').flexslider({
         animation: "slide",
         start: function(slider){
-          $('body').removeClass('loading');
-        }
+          $('body').removeClass('loading')
+        },
+     	directionNav: false,
+      	manualControls: ".flex-control-nav li"
       });
     });
 });

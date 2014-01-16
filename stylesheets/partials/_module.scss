@@ -228,7 +228,7 @@ header {
 		position: absolute;
 		top: 48px;
 		width: 250px;
-		z-index: 2;
+		z-index: 3;
 		li { 
 			display: block;
 			margin: 0;
@@ -549,7 +549,64 @@ header + .container {
 // Flexslider module
 @import "../vendor/flexslider.css";
 .flexslider {
+}
+.flexslider__slide-content {
+	background-color: rgba(255,255,255, 0.9);
+	left: 20px;
+	max-width: 300px;
+	padding: 20px;
+	position: absolute; 
+	top: 20px;
+	h3 {
+		margin: 0;
+	}
+	p {
 
+	}
+}
+.flex-control-nav {
+	max-width: 180px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	z-index: 2;
+	li {
+		color: #fff;
+		cursor: pointer;
+		margin: 0;
+		padding: 12px 0;
+		width: 100%;
+	}
+	li:first-child {
+		background-color: #829aaf;
+		-webkit-border-top-left-radius: 3px;
+		-moz-border-radius-topleft: 3px;
+		border-top-left-radius: 3px;
+		&:hover {
+			background-color: darken(#829aaf, 3);
+		}
+	}
+	li:nth-child(2) {
+		background-color: #708596;
+		&:hover {
+			background-color: darken(#708596, 3);
+		}
+	}
+	li:nth-child(3) {
+		background-color: #556674;
+		&:hover {
+			background-color: darken(#556674, 3);
+		}
+	}
+	li:last-child {
+		background-color: #35414c;
+		-webkit-border-bottom-left-radius: 4px;
+		-moz-border-radius-bottomleft: 4px;
+		border-bottom-left-radius: 4px;
+		&:hover {
+			background-color: darken(#35414c, 5);
+		}
+	}
 }
 
 //Footer modules
