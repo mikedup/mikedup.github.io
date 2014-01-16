@@ -546,6 +546,70 @@ header + .container {
 	min-height: 400px;
 }
 
+//Featured Clouds module
+.featured-clouds {
+	background-color: #35414C;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.featured-clouds__individual {
+	box-sizing: border-box;
+	padding: {
+		right: 15px;
+		bottom: 15px;
+		left: 15px;
+	}
+	text-align: center;
+	a {
+		text-decoration: none;
+	}
+	h3 {
+		color: #fff;
+		font-size: em(22px);
+		line-height: 24px;
+	}
+	p {
+		color: #829aaf;
+		font-size: em(16px);
+		line-height: 22px;
+	}
+	&.-apps{
+		background: url(../../images/apps-cloud.png) center 25px no-repeat;
+		padding-top: 55px;
+	}
+	&.-visualization{
+		background: url(../../images/vis-cloud.png) center 25px no-repeat;
+		padding-top: 55px;
+	}
+	&.-development{
+		background: url(../../images/dev-cloud.png) center 25px no-repeat;
+		padding-top: 55px;
+	}
+	&.-management{
+		background: url(../../images/man-cloud.png) center 25px no-repeat;
+		padding-top: 55px;
+	}
+}
+
+.featured-clouds__flexible-deployment {
+		background-color: #586977;
+		-webkit-border-bottom-right-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-radius-bottomright: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		color: rgb(130, 154, 175);
+		padding: 10px;
+		text-align: center;
+		p {
+			margin: 0;
+		}
+	}
+
 //Footer modules
 footer {
 	background-color: #EDF2F8;
