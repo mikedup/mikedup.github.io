@@ -540,10 +540,16 @@ header {
 	}
 }
 
-// Temporary until other content types are rebuilt and placed between header and footer
 header + .container {
-	margin-top: 55px;
-	min-height: 400px;
+	@include breakpoint(mobile-tablet) {
+		margin-top: 85px;
+	}
+}
+
+// Flexslider module
+@import "../vendor/flexslider.css";
+.flexslider {
+
 }
 
 //Footer modules

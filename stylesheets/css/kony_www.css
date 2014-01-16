@@ -1,4 +1,5 @@
 @import url(../vendor/skeleton.css);
+@import url(../vendor/flexslider.css);
 /* Base styles */
 @font-face {
   font-family: 'Frutiger Regular';
@@ -21,13 +22,20 @@ body {
   padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Karbon Light', Helvetica, sans-serif; }
+  font-family: 'Karbon Light', Helvetica, sans-serif;
+  margin: 1em 0; }
+
+h2 {
+  font-size: 2.5em; }
 
 a {
   color: #00a3d9; }
 
 a:hover {
   color: #0090c0; }
+
+.centered {
+  text-align: center; }
 
 /* Layout styles */
 /* Module styles */
@@ -443,9 +451,9 @@ header {
     .header-nav-trigger {
       display: block; } }
 
-header + .container {
-  margin-top: 55px;
-  min-height: 400px; }
+@media only screen and (max-width: 959px) {
+  header + .container {
+    margin-top: 85px; } }
 
 footer {
   background-color: #EDF2F8;

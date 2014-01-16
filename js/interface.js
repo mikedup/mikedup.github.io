@@ -42,4 +42,14 @@ $(document).ready(function() {
 	$('[data-js="loc-trigger"]').click(function() {
 		$(this).add('.loc-list').toggleClass('active');
 	});
+
+	// Flexslider
+	$(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
 });
