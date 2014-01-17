@@ -549,15 +549,62 @@ header + .container {
 // Flexslider module
 @import "../vendor/flexslider.css";
 .flexslider {
+	.slides {
+		li {
+			min-height: 220px;
+			img {
+				min-height: 220px;
+				min-width: 960px;
+			}
+			// Skip first two children because Flexslider creates clone elements for performance
+			&:nth-child(2) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide1, 0.9);
+					color: $homepageSlide1Text;
+					a {
+						color: $homepageSlide1Text;
+					}
+				}
+			}
+			&:nth-child(3) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide2, 0.9);
+					color: $homepageSlide2Text;
+					a {
+						color: $homepageSlide2Text;
+					}
+				}
+			}
+			&:nth-child(4) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide3, 0.9);
+					color: $homepageSlide3Text;
+					a {
+						color: $homepageSlide3Text;
+					}
+				}
+			}
+			&:nth-child(5) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide4, 0.9);
+					color: $homepageSlide4Text;
+					a {
+						color: $homepageSlide4Text;
+					}
+				}
+			}
+		}
+	}
 }
 .flexslider__slide-content {
 	background-color: rgba(255,255,255, 0.9);
 	left: 20px;
-	max-width: 300px;
+	max-width: 275px;
 	padding: 20px;
 	position: absolute; 
 	top: 20px;
 	h3 {
+		font-size: em(26px);
 		margin: 0;
 	}
 	p {
@@ -575,36 +622,49 @@ header + .container {
 		cursor: pointer;
 		margin: 0;
 		padding: 12px 0;
+		position: relative;
 		width: 100%;
-	}
-	li:first-child {
-		background-color: #829aaf;
-		-webkit-border-top-left-radius: 3px;
-		-moz-border-radius-topleft: 3px;
-		border-top-left-radius: 3px;
-		&:hover {
-			background-color: darken(#829aaf, 3);
+		&.flex-active:before {
+			border: {
+				top: 7px solid transparent;
+				right: 10px solid #fff;
+				bottom: 7px solid transparent;
+				left: none;
+			}
+			content:"";
+			position: absolute;
+			right: 0;
+			top: 13px;
 		}
-	}
-	li:nth-child(2) {
-		background-color: #708596;
-		&:hover {
-			background-color: darken(#708596, 3);
+		&:first-child {
+			background-color: #829aaf;
+			-webkit-border-top-left-radius: 3px;
+			-moz-border-radius-topleft: 3px;
+			border-top-left-radius: 3px;
+			&:hover {
+				background-color: darken(#829aaf, 3);
+			}
 		}
-	}
-	li:nth-child(3) {
-		background-color: #556674;
-		&:hover {
-			background-color: darken(#556674, 3);
+		&:nth-child(2) {
+			background-color: #708596;
+			&:hover {
+				background-color: darken(#708596, 3);
+			}
 		}
-	}
-	li:last-child {
-		background-color: #35414c;
-		-webkit-border-bottom-left-radius: 4px;
-		-moz-border-radius-bottomleft: 4px;
-		border-bottom-left-radius: 4px;
-		&:hover {
-			background-color: darken(#35414c, 5);
+		&:nth-child(3) {
+			background-color: #556674;
+			&:hover {
+				background-color: darken(#556674, 3);
+			}
+		}
+		&:last-child {
+			background-color: #35414c;
+			-webkit-border-bottom-left-radius: 4px;
+			-moz-border-radius-bottomleft: 4px;
+			border-bottom-left-radius: 4px;
+			&:hover {
+				background-color: darken(#35414c, 5);
+			}
 		}
 	}
 }
