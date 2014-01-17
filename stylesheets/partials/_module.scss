@@ -553,8 +553,12 @@ header + .container {
 		li {
 			min-height: 220px;
 			img {
+				-webkit-border-radius: 5px; 
+				-moz-border-radius: 5px; 
+				-o-border-radius: 5px; 
+				border-radius: 5px;
 				min-height: 220px;
-				min-width: 960px;
+				min-width: 940px;
 			}
 			// Skip first two children because Flexslider creates clone elements for performance
 			&:nth-child(2) {
@@ -594,12 +598,32 @@ header + .container {
 				}
 			}
 		}
+		@include breakpoint(tablet) {
+			li {
+				img {
+					min-width: 748px;
+				}
+			}
+		}
 		@include breakpoint(mobile-portrait) {
 			min-height: 250px;
 			li {
 				min-height: 96px;
 				img {
+					-webkit-border-bottom-left-radius: 0;
+					-webkit-border-bottom-right-radius: 0;
+					-moz-border-radius-bottomleft: 0;
+					-moz-border-radius-bottomright: 0;
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
 					min-height: 96px;
+					min-width: 300px;
+				}
+			}
+		}
+		@include breakpoint(mobile-landscape) {
+			li {
+				img {
 					min-width: 420px;
 				}
 			}
@@ -609,8 +633,12 @@ header + .container {
 .flexslider__slide-content {
 	background-color: rgba(255,255,255, 0.9);
 	box-sizing: border-box;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px;
 	left: 20px;
-	max-width: 275px;
+	max-width: 330px;
 	padding: 20px;
 	position: absolute; 
 	top: 20px;
@@ -622,10 +650,16 @@ header + .container {
 
 	}
 	@include breakpoint(mobile-portrait) {
-		top: 100%;
+		-webkit-border-top-left-radius: 0;
+		-webkit-border-top-right-radius: 0;
+		-moz-border-radius-topleft: 0;
+		-moz-border-radius-topright: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 		left: inherit;
 		max-width: none;
 		padding: 15px 20px;
+		top: 100%;
 		width: 100%;
 		h3 {
 			font-size: em(18px);

@@ -461,8 +461,12 @@ header {
 .flexslider .slides li {
   min-height: 220px; }
   .flexslider .slides li img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
     min-height: 220px;
-    min-width: 960px; }
+    min-width: 940px; }
   .flexslider .slides li:nth-child(2) .flexslider__slide-content {
     background-color: rgba(255, 255, 255, 0.9);
     color: #f04c23; }
@@ -483,20 +487,36 @@ header {
     color: white; }
     .flexslider .slides li:nth-child(5) .flexslider__slide-content a {
       color: white; }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .flexslider .slides li img {
+    min-width: 748px; } }
 @media only screen and (max-width: 767px) {
   .flexslider .slides {
     min-height: 250px; }
     .flexslider .slides li {
       min-height: 96px; }
       .flexslider .slides li img {
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        -moz-border-radius-bottomright: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
         min-height: 96px;
-        min-width: 420px; } }
+        min-width: 300px; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .flexslider .slides li img {
+    min-width: 420px; } }
 
 .flexslider__slide-content {
   background-color: rgba(255, 255, 255, 0.9);
   box-sizing: border-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   left: 20px;
-  max-width: 275px;
+  max-width: 330px;
   padding: 20px;
   position: absolute;
   top: 20px; }
@@ -505,10 +525,16 @@ header {
     margin: 0; }
   @media only screen and (max-width: 767px) {
     .flexslider__slide-content {
-      top: 100%;
+      -webkit-border-top-left-radius: 0;
+      -webkit-border-top-right-radius: 0;
+      -moz-border-radius-topleft: 0;
+      -moz-border-radius-topright: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       left: inherit;
       max-width: none;
       padding: 15px 20px;
+      top: 100%;
       width: 100%; }
       .flexslider__slide-content h3 {
         font-size: 1.125em; }
