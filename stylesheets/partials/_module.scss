@@ -608,7 +608,7 @@ header + .container {
 		@include breakpoint(mobile-portrait) {
 			min-height: 250px;
 			li {
-				min-height: 96px;
+				min-height: 69px;
 				img {
 					-webkit-border-bottom-left-radius: 0;
 					-webkit-border-bottom-right-radius: 0;
@@ -616,14 +616,16 @@ header + .container {
 					-moz-border-radius-bottomright: 0;
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
-					min-height: 96px;
+					min-height: 69px;
 					min-width: 300px;
 				}
 			}
 		}
 		@include breakpoint(mobile-landscape) {
 			li {
+				min-height: 96px;
 				img {
+					min-height: 96px;
 					min-width: 420px;
 				}
 			}
@@ -681,6 +683,14 @@ header + .container {
 	}
 	@include breakpoint(mobile-portrait) {
 		display: block;
+		.flex-next, .flex-prev {
+			top: 24%;
+		}
+	}
+	@include breakpoint(mobile-landscape) {
+		.flex-next, .flex-prev {
+			top: 34%;
+		}
 	}
 }
 .flex-control-nav {
