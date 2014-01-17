@@ -831,8 +831,37 @@ header + .container {
 		}
 	}
 
+
+//Featured companies module
+.featured-companies {
+	background: url(../../images/homepage-customer-banner.gif) bottom no-repeat;
+	background-size: 100%;
+	margin-bottom: 25px;
+	padding-bottom: 50px;
+	padding-top: 35px;
+	h3 {
+		font-size: em(20px);
+		line-height: 24px;
+		color: #35414c;
+	}
+	@include breakpoint(mobile-portrait) {
+		background: url(../../images/homepage-customer-banner-mobile.gif) bottom no-repeat;
+		background-size: 100%;
+		h3 {
+			font-size: em(16px);
+		}
+		padding-bottom: 85px;
+
+	}
+	@include breakpoint(mobile-landscape) {
+		padding-bottom: 120px;
+	}
+
+}
+
 //Footer modules
 footer {
+	margin-top: 25px;
 	background-color: #EDF2F8;
 	border-top: 1px solid #959595;
 	padding: 35px 0 55px 0;
