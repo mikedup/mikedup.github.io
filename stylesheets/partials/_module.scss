@@ -554,6 +554,9 @@ header + .container {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	border-radius: 5px;
+	.row {
+		margin-bottom: 10px;
+	}
 }
 .featured-clouds__individual {
 	box-sizing: border-box;
@@ -570,15 +573,22 @@ header + .container {
 		color: #fff;
 		font-size: em(22px);
 		line-height: 24px;
+		margin-bottom: 5px;
 	}
 	p {
 		color: #829aaf;
 		font-size: em(16px);
-		line-height: 22px;
+		line-height: 20px;
+		margin-top: 10px;
 	}
 	&.-apps{
 		background: url(../../images/apps-cloud.png) center 25px no-repeat;
 		padding-top: 55px;
+		@include breakpoint(mobile-portrait) {
+			a {
+			line-height: 28px;
+				}
+		}
 	}
 	&.-visualization{
 		background: url(../../images/vis-cloud.png) center 25px no-repeat;
@@ -607,6 +617,9 @@ header + .container {
 		text-align: center;
 		p {
 			margin: 0;
+		}
+		a {
+			text-decoration: none;
 		}
 	}
 

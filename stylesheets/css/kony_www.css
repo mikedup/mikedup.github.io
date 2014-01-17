@@ -454,6 +454,8 @@ header + .container {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px; }
+  .featured-clouds .row {
+    margin-bottom: 10px; }
 
 .featured-clouds__individual {
   box-sizing: border-box;
@@ -466,14 +468,19 @@ header + .container {
   .featured-clouds__individual h3 {
     color: #fff;
     font-size: 1.375em;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-bottom: 5px; }
   .featured-clouds__individual p {
     color: #829aaf;
     font-size: 1em;
-    line-height: 22px; }
+    line-height: 20px;
+    margin-top: 10px; }
   .featured-clouds__individual.-apps {
     background: url(../../images/apps-cloud.png) center 25px no-repeat;
     padding-top: 55px; }
+    @media only screen and (max-width: 767px) {
+      .featured-clouds__individual.-apps a {
+        line-height: 28px; } }
   .featured-clouds__individual.-visualization {
     background: url(../../images/vis-cloud.png) center 25px no-repeat;
     padding-top: 55px; }
@@ -497,6 +504,8 @@ header + .container {
   text-align: center; }
   .featured-clouds__flexible-deployment p {
     margin: 0; }
+  .featured-clouds__flexible-deployment a {
+    text-decoration: none; }
 
 footer {
   background-color: #EDF2F8;
