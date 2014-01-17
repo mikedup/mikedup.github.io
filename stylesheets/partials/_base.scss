@@ -48,10 +48,22 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Karbon Light', Helvetica, sans-serif;
+  margin: 1em 0;
+}
+h2 {
+  font-size: em(40px);
+  @include breakpoint(mobile-portrait) {
+    font-size: em(26px);
+  }
 }
 a {
 	color: $lightBlue;
 }
 a:hover {
 	color: darken($lightBlue, 5);
+}
+
+// Helper classes
+.centered {
+  text-align: center;
 }

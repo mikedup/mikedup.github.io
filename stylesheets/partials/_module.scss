@@ -30,7 +30,7 @@ header {
 		min-height: 55px;
 		position: fixed; 
 		top: 0;
-		z-index: 2;
+		z-index: 10;
 		h1 {
 			margin-top: 10px !important;
 			width: 100px !important;
@@ -228,7 +228,7 @@ header {
 		position: absolute;
 		top: 48px;
 		width: 250px;
-		z-index: 2;
+		z-index: 3;
 		li { 
 			display: block;
 			margin: 0;
@@ -540,10 +540,174 @@ header {
 	}
 }
 
-// Temporary until other content types are rebuilt and placed between header and footer
 header + .container {
-	margin-top: 55px;
-	min-height: 400px;
+	@include breakpoint(mobile-tablet) {
+		margin-top: 85px;
+	}
+}
+
+// Flexslider module
+@import "../vendor/flexslider.css";
+.flexslider {
+	.slides {
+		li {
+			min-height: 220px;
+			img {
+				min-height: 220px;
+				min-width: 960px;
+			}
+			// Skip first two children because Flexslider creates clone elements for performance
+			&:nth-child(2) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide1, 0.9);
+					color: $homepageSlide1Text;
+					a {
+						color: $homepageSlide1Text;
+					}
+				}
+			}
+			&:nth-child(3) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide2, 0.9);
+					color: $homepageSlide2Text;
+					a {
+						color: $homepageSlide2Text;
+					}
+				}
+			}
+			&:nth-child(4) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide3, 0.9);
+					color: $homepageSlide3Text;
+					a {
+						color: $homepageSlide3Text;
+					}
+				}
+			}
+			&:nth-child(5) {
+				.flexslider__slide-content {
+					background-color: rgba($homepageSlide4, 0.9);
+					color: $homepageSlide4Text;
+					a {
+						color: $homepageSlide4Text;
+					}
+				}
+			}
+		}
+		@include breakpoint(mobile-portrait) {
+			min-height: 250px;
+			li {
+				min-height: 96px;
+				img {
+					min-height: 96px;
+					min-width: 420px;
+				}
+			}
+		}
+	}
+}
+.flexslider__slide-content {
+	background-color: rgba(255,255,255, 0.9);
+	box-sizing: border-box;
+	left: 20px;
+	max-width: 275px;
+	padding: 20px;
+	position: absolute; 
+	top: 20px;
+	h3 {
+		font-size: em(26px);
+		margin: 0;
+	}
+	p {
+
+	}
+	@include breakpoint(mobile-portrait) {
+		top: 100%;
+		left: inherit;
+		max-width: none;
+		padding: 15px 20px;
+		width: 100%;
+		h3 {
+			font-size: em(18px);
+		}
+		p, a {
+			font-size: em(14px);
+		}
+	}
+}
+.flex-direction-nav {
+	display: none;
+	.flex-next, .flex-prev {
+		height: 28px;
+		width: 28px;
+		top: 34%;
+	}
+	.flex-next:before, .flex-prev:before {
+		font-size: em(24px);
+	}
+	@include breakpoint(mobile-portrait) {
+		display: block;
+	}
+}
+.flex-control-nav {
+	max-width: 180px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	z-index: 2;
+	li {
+		color: #fff;
+		cursor: pointer;
+		margin: 0;
+		padding: 12px 0;
+		position: relative;
+		width: 100%;
+		&.flex-active:before {
+			border: {
+				top: 7px solid transparent;
+				right: 10px solid #fff;
+				bottom: 7px solid transparent;
+				left: none;
+			}
+			content:"";
+			position: absolute;
+			right: 0;
+			top: 13px;
+		}
+		&:first-child {
+			background-color: #829aaf;
+			-webkit-border-top-left-radius: 3px;
+			-moz-border-radius-topleft: 3px;
+			border-top-left-radius: 3px;
+			&:hover {
+				background-color: darken(#829aaf, 3);
+			}
+		}
+		&:nth-child(2) {
+			background-color: #708596;
+			&:hover {
+				background-color: darken(#708596, 3);
+			}
+		}
+		&:nth-child(3) {
+			background-color: #556674;
+			&:hover {
+				background-color: darken(#556674, 3);
+			}
+		}
+		&:last-child {
+			background-color: #35414c;
+			-webkit-border-bottom-left-radius: 4px;
+			-moz-border-radius-bottomleft: 4px;
+			border-bottom-left-radius: 4px;
+			&:hover {
+				background-color: darken(#35414c, 5);
+			}
+		}
+	}
+	@include breakpoint(mobile-portrait) {
+		display: none;
+	}
 }
 
 //Featured Clouds module
