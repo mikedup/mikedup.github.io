@@ -595,12 +595,12 @@ header + .container {
 			}
 		}
 		@include breakpoint(mobile-portrait) {
-			min-height: 350px;
+			min-height: 250px;
 			li {
-				min-height: 180px;
+				min-height: 96px;
 				img {
-					min-height: 180px;
-					min-width: 800px;
+					min-height: 96px;
+					min-width: 420px;
 				}
 			}
 		}
@@ -640,7 +640,7 @@ header + .container {
 	.flex-next, .flex-prev {
 		height: 28px;
 		width: 28px;
-		top: 45%;
+		top: 34%;
 	}
 	.flex-next:before, .flex-prev:before {
 		font-size: em(24px);

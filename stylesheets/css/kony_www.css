@@ -485,12 +485,12 @@ header {
       color: white; }
 @media only screen and (max-width: 767px) {
   .flexslider .slides {
-    min-height: 350px; }
+    min-height: 250px; }
     .flexslider .slides li {
-      min-height: 180px; }
+      min-height: 96px; }
       .flexslider .slides li img {
-        min-height: 180px;
-        min-width: 800px; } }
+        min-height: 96px;
+        min-width: 420px; } }
 
 .flexslider__slide-content {
   background-color: rgba(255, 255, 255, 0.9);
@@ -520,7 +520,7 @@ header {
   .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
     height: 28px;
     width: 28px;
-    top: 45%; }
+    top: 34%; }
   .flex-direction-nav .flex-next:before, .flex-direction-nav .flex-prev:before {
     font-size: 1.5em; }
   @media only screen and (max-width: 767px) {
