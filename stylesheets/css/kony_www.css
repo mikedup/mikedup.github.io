@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 2.5em; }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: 1.625em; } }
 
 a {
   color: #00a3d9; }
@@ -65,7 +68,7 @@ header {
       min-height: 55px;
       position: fixed;
       top: 0;
-      z-index: 2; }
+      z-index: 10; }
       header h1 {
         margin-top: 10px !important;
         width: 100px !important; }
@@ -480,9 +483,18 @@ header {
     color: white; }
     .flexslider .slides li:nth-child(5) .flexslider__slide-content a {
       color: white; }
+@media only screen and (max-width: 767px) {
+  .flexslider .slides {
+    min-height: 350px; }
+    .flexslider .slides li {
+      min-height: 180px; }
+      .flexslider .slides li img {
+        min-height: 180px;
+        min-width: 800px; } }
 
 .flexslider__slide-content {
   background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
   left: 20px;
   max-width: 275px;
   padding: 20px;
@@ -491,6 +503,29 @@ header {
   .flexslider__slide-content h3 {
     font-size: 1.625em;
     margin: 0; }
+  @media only screen and (max-width: 767px) {
+    .flexslider__slide-content {
+      top: 100%;
+      left: inherit;
+      max-width: none;
+      padding: 15px 20px;
+      width: 100%; }
+      .flexslider__slide-content h3 {
+        font-size: 1.125em; }
+      .flexslider__slide-content p, .flexslider__slide-content a {
+        font-size: 0.875em; } }
+
+.flex-direction-nav {
+  display: none; }
+  .flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+    height: 28px;
+    width: 28px;
+    top: 45%; }
+  .flex-direction-nav .flex-next:before, .flex-direction-nav .flex-prev:before {
+    font-size: 1.5em; }
+  @media only screen and (max-width: 767px) {
+    .flex-direction-nav {
+      display: block; } }
 
 .flex-control-nav {
   max-width: 180px;
@@ -536,6 +571,9 @@ header {
       border-bottom-left-radius: 4px; }
       .flex-control-nav li:last-child:hover {
         background-color: #2b343d; }
+  @media only screen and (max-width: 767px) {
+    .flex-control-nav {
+      display: none; } }
 
 footer {
   background-color: #EDF2F8;

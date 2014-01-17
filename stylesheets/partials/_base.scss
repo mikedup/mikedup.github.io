@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   font-size: em(40px);
+  @include breakpoint(mobile-portrait) {
+    font-size: em(26px);
+  }
 }
 a {
 	color: $lightBlue;

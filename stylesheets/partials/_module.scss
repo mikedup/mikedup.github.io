@@ -30,7 +30,7 @@ header {
 		min-height: 55px;
 		position: fixed; 
 		top: 0;
-		z-index: 2;
+		z-index: 10;
 		h1 {
 			margin-top: 10px !important;
 			width: 100px !important;
@@ -594,10 +594,21 @@ header + .container {
 				}
 			}
 		}
+		@include breakpoint(mobile-portrait) {
+			min-height: 350px;
+			li {
+				min-height: 180px;
+				img {
+					min-height: 180px;
+					min-width: 800px;
+				}
+			}
+		}
 	}
 }
 .flexslider__slide-content {
 	background-color: rgba(255,255,255, 0.9);
+	box-sizing: border-box;
 	left: 20px;
 	max-width: 275px;
 	padding: 20px;
@@ -609,6 +620,33 @@ header + .container {
 	}
 	p {
 
+	}
+	@include breakpoint(mobile-portrait) {
+		top: 100%;
+		left: inherit;
+		max-width: none;
+		padding: 15px 20px;
+		width: 100%;
+		h3 {
+			font-size: em(18px);
+		}
+		p, a {
+			font-size: em(14px);
+		}
+	}
+}
+.flex-direction-nav {
+	display: none;
+	.flex-next, .flex-prev {
+		height: 28px;
+		width: 28px;
+		top: 45%;
+	}
+	.flex-next:before, .flex-prev:before {
+		font-size: em(24px);
+	}
+	@include breakpoint(mobile-portrait) {
+		display: block;
 	}
 }
 .flex-control-nav {
@@ -666,6 +704,9 @@ header + .container {
 				background-color: darken(#35414c, 5);
 			}
 		}
+	}
+	@include breakpoint(mobile-portrait) {
+		display: none;
 	}
 }
 

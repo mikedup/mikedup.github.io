@@ -50,7 +50,6 @@ $(document).ready(function() {
         start: function(slider){
           $('body').removeClass('loading')
         },
-     	directionNav: false,
       	manualControls: ".flex-control-nav li"
       });
     });
