@@ -669,7 +669,29 @@ header {
   .featured-clouds__flexible-deployment a {
     text-decoration: none; }
 
+.featured-companies {
+  background: url(../../images/homepage-customer-banner.gif) bottom no-repeat;
+  background-size: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  padding-top: 35px; }
+  .featured-companies h3 {
+    font-size: 1.25em;
+    line-height: 24px;
+    color: #35414c; }
+  @media only screen and (max-width: 767px) {
+    .featured-companies {
+      background: url(../../images/homepage-customer-banner-mobile.gif) bottom no-repeat;
+      background-size: 100%;
+      padding-bottom: 85px; }
+      .featured-companies h3 {
+        font-size: 1em; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .featured-companies {
+      padding-bottom: 120px; } }
+
 footer {
+  margin-top: 25px;
   background-color: #EDF2F8;
   border-top: 1px solid #959595;
   padding: 35px 0 55px 0; }
