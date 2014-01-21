@@ -859,6 +859,19 @@ header + .container {
 
 }
 
+//Feedbox module
+.feed-box {
+	background-color: #edf2f8;
+	//border: 1px solid #ccc;
+	//border-left: 4px solid #006097;
+	box-sizing: border-box;
+	h3 {
+		font-size: em(20px);
+		line-height: 24px;
+		padding-left:10px;
+	}
+}
+
 //Footer modules
 footer {
 	margin-top: 25px;

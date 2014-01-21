@@ -690,6 +690,14 @@ header {
     .featured-companies {
       padding-bottom: 120px; } }
 
+.feed-box {
+  background-color: #edf2f8;
+  box-sizing: border-box; }
+  .feed-box h3 {
+    font-size: 1.25em;
+    line-height: 24px;
+    padding-left: 10px; }
+
 footer {
   margin-top: 25px;
   background-color: #EDF2F8;
