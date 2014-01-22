@@ -698,6 +698,8 @@ header {
 
 .feed-box {
   background-color: #edf2f8;
+  -webkit-box-shadow: -4px 0 0 0 #006097;
+  -moz-box-shadow: -4px 0 0 0 #006097;
   box-shadow: -4px 0 0 0 #006097;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -707,13 +709,43 @@ header {
     font-size: 1.3125em;
     line-height: 24px;
     padding: 0 15px; }
+  .feed-box ul {
+    padding-left: 15px;
+    padding-top: 10px; }
+    .feed-box ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding-right: 15px; }
+      .feed-box ul li a {
+        text-decoration: none; }
+  @media only screen and (max-width: 767px) {
+    .feed-box {
+      margin-bottom: 10px !important; }
+      .feed-box h3 + .feed-box__article {
+        padding-top: 0; } }
+  @media only screen and (max-width: 959px) {
+    .feed-box ul li {
+      display: block;
+      padding-bottom: 5px; } }
 
+@media only screen and (max-width: 767px) {
+  .feed-box__article {
+    padding-top: 10px; } }
 .feed-box__article .article-type {
   box-sizing: border-box;
   display: block;
   float: left;
   padding: 0 0 0 15px;
   width: 20%; }
+  @media only screen and (max-width: 959px) {
+    .feed-box__article .article-type {
+      width: 25%; } }
+  @media only screen and (max-width: 767px) {
+    .feed-box__article .article-type {
+      color: #999;
+      font-size: 0.875em;
+      padding-bottom: 5px;
+      width: 100%; } }
 .feed-box__article .article-body {
   box-sizing: border-box;
   float: left;
@@ -727,10 +759,21 @@ header {
       text-decoration: none; }
   .feed-box__article .article-body .byline {
     line-height: 1.35em;
+    margin-bottom: 5px;
     margin-top: 0; }
   .feed-box__article .article-body time {
     color: #999;
     font-size: 0.875em; }
+  @media only screen and (max-width: 959px) {
+    .feed-box__article .article-body {
+      padding: 0 10px;
+      width: 75%; } }
+  @media only screen and (max-width: 767px) {
+    .feed-box__article .article-body {
+      width: 100%;
+      padding: 0 15px; }
+      .feed-box__article .article-body .byline {
+        font-size: 0.875em; } }
 
 footer {
   margin-top: 25px;
