@@ -836,7 +836,7 @@ header + .container {
 .featured-companies {
 	background: url(../../images/homepage-customer-banner.gif) bottom no-repeat;
 	background-size: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 35px !important;
 	padding-bottom: 50px;
 	padding-top: 35px;
 	h3 {
@@ -857,6 +857,112 @@ header + .container {
 		padding-bottom: 120px;
 	}
 
+}
+
+//Feedbox module
+.feed-box {
+	background-color: #edf2f8;
+	-webkit-box-shadow: -4px 0 0 0 #006097;
+	-moz-box-shadow: -4px 0 0 0 #006097;
+	box-shadow: -4px 0 0 0 #006097;
+	border: {
+		top: 1px solid #ccc;
+		right: 1px solid #ccc;
+		bottom: 1px solid #ccc;
+	}
+	box-sizing: border-box;
+	h3 {
+		font-size: em(21px);
+		line-height: 24px;
+		padding: 0 15px;
+	}
+	ul {
+		padding: {
+			left: 15px;
+			top: 10px;
+		}
+		li {
+			display: inline-block;
+			list-style-type: none;
+			padding-right:15px;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	@include breakpoint(mobile-portrait) {
+		margin-bottom: 10px !important;
+		h3 + .feed-box__article {
+			padding-top: 0;
+		}
+	}
+	@include breakpoint (mobile-tablet) {
+		ul {
+			li {
+				display: block;
+				padding-bottom: 5px; 
+				}
+		}
+	}
+}
+.feed-box__article {
+	@include breakpoint (mobile-portrait) {
+		padding-top: 10px;
+	}
+	.article-type {
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		padding: 0 0 0 15px;
+		width: 20%;
+		@include breakpoint (mobile-tablet) {
+			width: 25%;
+		}
+		@include breakpoint(mobile-portrait) {
+			color: #999;
+			font-size: em(14px);
+			padding-bottom: 5px;
+			width: 100%;
+		}
+	}
+	.article-body {
+		box-sizing: border-box;
+		float: left;
+		padding: 0 15px;
+		width: 80%;
+		h4 {
+			font-size: em(16px);
+			margin: {
+				top: 0;
+				bottom: 5px;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+		.byline {
+			line-height: 1.35em;
+			margin: {
+				bottom: 5px;
+				top: 0;
+			}
+		}
+		time {
+			color: #999;
+			font-size: em(14px);
+		}
+		@include breakpoint(mobile-tablet) {
+			padding: 0 10px;
+			width: 75%;
+		}
+		@include breakpoint(mobile-portrait) {
+			width: 100%;
+			padding: 0 15px;
+			.byline {
+				font-size: em(14px);
+			}
+		}
+	}
 }
 
 //Footer modules
