@@ -884,6 +884,15 @@ footer {
       .footer-social li:first-child {
         padding-left: 0; } }
 
+h2.styleguide-heading {
+  font-size: 3em;
+  margin: 0.5em 0 0.25em 0; }
+
+h3.styleguide-heading {
+  font-size: 1.75em;
+  margin: 2em 0 1em 0;
+  border-bottom: 1px solid #ccc; }
+
 /* State styles */
 .loc-trigger.active:before {
   background: #fff;
