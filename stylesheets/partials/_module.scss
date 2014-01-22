@@ -836,7 +836,7 @@ header + .container {
 .featured-companies {
 	background: url(../../images/homepage-customer-banner.gif) bottom no-repeat;
 	background-size: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 35px !important;
 	padding-bottom: 50px;
 	padding-top: 35px;
 	h3 {
@@ -862,13 +862,50 @@ header + .container {
 //Feedbox module
 .feed-box {
 	background-color: #edf2f8;
-	//border: 1px solid #ccc;
-	//border-left: 4px solid #006097;
+	box-shadow: -4px 0 0 0 #006097;
+	border: {
+		top: 1px solid #ccc;
+		right: 1px solid #ccc;
+		bottom: 1px solid #ccc;
+	}
 	box-sizing: border-box;
 	h3 {
-		font-size: em(20px);
+		font-size: em(21px);
 		line-height: 24px;
-		padding-left:10px;
+		padding: 0 15px;
+	}
+}
+.feed-box__article {
+	.article-type {
+		box-sizing: border-box;
+		display: block;
+		float: left;
+		padding: 0 0 0 15px;
+		width: 20%;
+	}
+	.article-body {
+		box-sizing: border-box;
+		float: left;
+		padding: 0 15px;
+		width: 80%;
+		h4 {
+			font-size: em(16px);
+			margin: {
+				top: 0;
+				bottom: 5px;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+		.byline {
+			line-height: 1.35em;
+			margin-top: 0;
+		}
+		time {
+			color: #999;
+			font-size: em(14px);
+		}
 	}
 }
 
