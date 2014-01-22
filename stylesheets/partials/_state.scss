@@ -9,7 +9,7 @@
 .loc-list.active {
 	display: block;
 }
-.header-nav.active {
+.header__nav.active {
 	@media only screen and (max-width: 959px) {
 		display: block !important;
 		li {
@@ -48,17 +48,17 @@
 				color: $lightBlue;
 			}
 		}
-		.header-search {
+		.header__search {
 			display: block;
 		}
-		.header-contact {
+		.header__contact {
 			display: block;
 		}
 	}
 }
-.header-nav-trigger.active {
+.header__nav-trigger.active {
 	background: #f2f2f2;
 }
-.header-nav-trigger.active:before {
+.header__nav-trigger.active:before {
 	color: $headerColor;
 }

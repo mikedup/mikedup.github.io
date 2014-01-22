@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	// Clone header contact and search for mobile nav so there's no need to maintain in two places
-	$('.header-contact > ul').clone().addClass('header-contact').appendTo('.header-nav');
-	$('.header-search').clone().prependTo('.header-nav');
-	$('.header-nav .header-contact').find('a[href="tel:1-888-323-9630"]').text('Call Us').attr('href', 'http://www.kony.com/about/locations');
+	$('.header__contact > ul').clone().addClass('header__contact').appendTo('.header__nav');
+	$('.header__search').clone().prependTo('.header__nav');
+	$('.header__nav .header__contact').find('a[href="tel:1-888-323-9630"]').text('Call Us').attr('href', 'http://www.kony.com/about/locations');
 
 	// Dropdowns
 	$('[data-js="nav-trigger"]').click(function() {
-		$(this).add('.header-nav').toggleClass('active');
+		$(this).add('.header__nav').toggleClass('active');
 	});
 	$('[data-js="subnav-trigger"]').click(function() {
 		// If the clicked trigger's dropdown is open, close dropdown and toggle icon back to default
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		// Auto scroll to selected nav item if it is a top-level item
 		if ($(this).hasClass('icon-angle-up') || $(this).hasClass('icon-angle-down')) {
 			var selectedItemPos = $(this).closest('li').position().top;
-			$('.header-nav').animate({scrollTop: selectedItemPos});
+			$('.header__nav').animate({scrollTop: selectedItemPos});
 		}
 
 		return false;
