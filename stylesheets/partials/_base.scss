@@ -9,6 +9,13 @@
   	font-style: normal; 
 }
 @font-face {
+    font-family: 'Karbon Regular';
+    src: url("../../fonts/karbon-regular-webfont.eot");
+    src: url("../../fonts/karbon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-regular-webfont.woff") format("woff"), url("../../fonts/karbon-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
   	font-family: 'Karbon Light';
   	src: url("../../fonts/karbon-light-webfont.eot");
   	src: url("../../fonts/karbon-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-light-webfont.woff") format("woff"), url("../../fonts/karbon-light-webfont.ttf") format("truetype");
@@ -55,7 +62,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0;
 }
 h2 {
-  font-size: em(40px);
+  font: {
+    family: 'Karbon Regular', Helvetica, sans-serif;
+    size: em(40px);
+  }
   @include breakpoint(mobile-portrait) {
     font-size: em(26px);
   }

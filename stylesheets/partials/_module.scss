@@ -646,7 +646,10 @@ header + .container {
 	position: absolute; 
 	top: 20px;
 	h3 {
-		font-size: em(26px);
+		font: {
+		    family: 'Karbon Regular', Helvetica, sans-serif;
+		    size: em(26px);
+		  }
 		margin: 0;
 	}
 	@include breakpoint(tablet) {
@@ -1032,7 +1035,7 @@ footer {
 	}
 }
 .footer__fineprint {
-	@extend .footer-contact;
+	@extend .footer__contact;
 	li {
 		line-height: 12px;
 		a {
@@ -1117,6 +1120,12 @@ footer {
 h2.styleguide-heading {
 	font-size: em(48px);
 	margin: 0.5em 0 0.25em 0 !important;
+	@include breakpoint(tablet) {
+		margin: {
+			right: 15px !important;
+			left: 15px !important;
+		}
+	}
 	@include breakpoint(mobile-portrait) {
 		font-size: em(36px);
 	}
@@ -1125,6 +1134,12 @@ h3.styleguide-heading {
 	font-size: em(28px);
 	margin: 2em 0 1em 0 !important;
 	border-bottom: 1px solid #ccc;
+	@include breakpoint(tablet) {
+		margin: {
+			right: 15px !important;
+			left: 15px !important;
+		}
+	}
 	@include breakpoint(mobile-portrait) {
 		font-size: em(24px);
 	}

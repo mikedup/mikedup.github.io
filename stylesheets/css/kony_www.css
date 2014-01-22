@@ -9,6 +9,13 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Karbon Regular';
+  src: url("../../fonts/karbon-regular-webfont.eot");
+  src: url("../../fonts/karbon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-regular-webfont.woff") format("woff"), url("../../fonts/karbon-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Karbon Light';
   src: url("../../fonts/karbon-light-webfont.eot");
   src: url("../../fonts/karbon-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-light-webfont.woff") format("woff"), url("../../fonts/karbon-light-webfont.ttf") format("truetype");
@@ -28,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0; }
 
 h2 {
+  font-family: 'Karbon Regular', Helvetica, sans-serif;
   font-size: 2.5em; }
   @media only screen and (max-width: 767px) {
     h2 {
@@ -537,6 +545,7 @@ header {
   position: absolute;
   top: 20px; }
   .flexslider__slide-content h3 {
+    font-family: 'Karbon Regular', Helvetica, sans-serif;
     font-size: 1.625em;
     margin: 0; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -810,25 +819,25 @@ footer {
     footer {
       text-align: center; } }
 
-.footer__contact {
+.footer__contact, .footer__fineprint {
   padding-left: 0; }
-  .footer__contact li {
+  .footer__contact li, .footer__fineprint li {
     border-left: 1px solid #586977;
     display: inline-block;
     line-height: 17px;
     padding: 0 10px; }
-    .footer__contact li a {
+    .footer__contact li a, .footer__fineprint li a {
       font-size: 1.125em;
       text-decoration: none; }
-    .footer__contact li a[href^="tel:"] {
+    .footer__contact li a[href^="tel:"], .footer__fineprint li a[href^="tel:"] {
       color: #586977; }
-  .footer__contact li:first-child {
+  .footer__contact li:first-child, .footer__fineprint li:first-child {
     border-left: none;
     padding-left: 0; }
-  .footer__contact li:last-child {
+  .footer__contact li:last-child, .footer__fineprint li:last-child {
     padding-right: 0; }
   @media only screen and (max-width: 767px) {
-    .footer__contact li a {
+    .footer__contact li a, .footer__fineprint li a {
       font-size: 0.75em;
       line-height: 12px; } }
 
@@ -891,6 +900,10 @@ footer {
 h2.styleguide-heading {
   font-size: 3em;
   margin: 0.5em 0 0.25em 0 !important; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    h2.styleguide-heading {
+      margin-right: 15px !important;
+      margin-left: 15px !important; } }
   @media only screen and (max-width: 767px) {
     h2.styleguide-heading {
       font-size: 2.25em; } }
@@ -899,6 +912,10 @@ h3.styleguide-heading {
   font-size: 1.75em;
   margin: 2em 0 1em 0 !important;
   border-bottom: 1px solid #ccc; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    h3.styleguide-heading {
+      margin-right: 15px !important;
+      margin-left: 15px !important; } }
   @media only screen and (max-width: 767px) {
     h3.styleguide-heading {
       font-size: 1.5em; } }
