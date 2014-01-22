@@ -26,10 +26,6 @@ header {
 			margin-top: 10px !important;
 			width: 100px !important;
 		}
-		.logo {
-			min-height: 25px;
-			width: 100%;
-		}
 	}
 	@include breakpoint(mobile-portrait) {
 		.container {
@@ -58,6 +54,10 @@ header {
 	overflow: hidden;
 	text-indent: 120%;
 	white-space: nowrap;
+	@include breakpoint(mobile-tablet) {
+		min-height: 25px;
+		width: 100%;
+	}
 }
 .header__contact {
 	padding-right: 10px;
@@ -906,7 +906,7 @@ header + .container {
 		}
 	}
 	@include breakpoint(mobile-portrait) {
-		margin-bottom: 10px !important;
+		margin-bottom: 20px !important;
 		h3 + .feed-box__article {
 			padding-top: 0;
 		}
@@ -1116,12 +1116,18 @@ footer {
 // Styleguide specific styles -- *Not for use in production*
 h2.styleguide-heading {
 	font-size: em(48px);
-	margin: 0.5em 0 0.25em 0;
+	margin: 0.5em 0 0.25em 0 !important;
+	@include breakpoint(mobile-portrait) {
+		font-size: em(36px);
+	}
 }
 h3.styleguide-heading {
 	font-size: em(28px);
-	margin: 2em 0 1em 0;
+	margin: 2em 0 1em 0 !important;
 	border-bottom: 1px solid #ccc;
+	@include breakpoint(mobile-portrait) {
+		font-size: em(24px);
+	}
 }
 
 

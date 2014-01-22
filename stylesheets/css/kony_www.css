@@ -69,10 +69,7 @@ header {
       z-index: 10; }
       header h1 {
         margin-top: 10px !important;
-        width: 100px !important; }
-      header .logo {
-        min-height: 25px;
-        width: 100%; } }
+        width: 100px !important; } }
   @media only screen and (max-width: 767px) {
     header .container {
       margin: 0;
@@ -93,6 +90,10 @@ header {
   overflow: hidden;
   text-indent: 120%;
   white-space: nowrap; }
+  @media only screen and (max-width: 959px) {
+    .header__logo {
+      min-height: 25px;
+      width: 100%; } }
 
 .header__contact {
   padding-right: 10px; }
@@ -739,7 +740,7 @@ header {
         text-decoration: none; }
   @media only screen and (max-width: 767px) {
     .feed-box {
-      margin-bottom: 10px !important; }
+      margin-bottom: 20px !important; }
       .feed-box h3 + .feed-box__article {
         padding-top: 0; } }
   @media only screen and (max-width: 959px) {
@@ -889,12 +890,18 @@ footer {
 
 h2.styleguide-heading {
   font-size: 3em;
-  margin: 0.5em 0 0.25em 0; }
+  margin: 0.5em 0 0.25em 0 !important; }
+  @media only screen and (max-width: 767px) {
+    h2.styleguide-heading {
+      font-size: 2.25em; } }
 
 h3.styleguide-heading {
   font-size: 1.75em;
-  margin: 2em 0 1em 0;
+  margin: 2em 0 1em 0 !important;
   border-bottom: 1px solid #ccc; }
+  @media only screen and (max-width: 767px) {
+    h3.styleguide-heading {
+      font-size: 1.5em; } }
 
 /* State styles */
 .loc-trigger.active:before {
