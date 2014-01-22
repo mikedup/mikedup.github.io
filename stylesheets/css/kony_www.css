@@ -771,7 +771,6 @@ header {
       width: 25%; } }
   @media only screen and (max-width: 767px) {
     .feed-box__article .article-type {
-      color: #999;
       font-size: 0.875em;
       padding-bottom: 5px;
       width: 100%; } }
@@ -787,6 +786,7 @@ header {
     .feed-box__article .article-body h4 a {
       text-decoration: none; }
   .feed-box__article .article-body .byline {
+    color: #999;
     line-height: 1.35em;
     margin-bottom: 5px;
     margin-top: 0; }
@@ -805,7 +805,7 @@ header {
         font-size: 0.875em; } }
 
 footer {
-  margin-top: 25px;
+  margin-top: 45px;
   background-color: #EDF2F8;
   border-top: 1px solid #959595;
   padding: 35px 0 55px 0; }

@@ -937,7 +937,6 @@ header + .container {
 			width: 25%;
 		}
 		@include breakpoint(mobile-portrait) {
-			color: #999;
 			font-size: em(14px);
 			padding-bottom: 5px;
 			width: 100%;
@@ -959,6 +958,7 @@ header + .container {
 			}
 		}
 		.byline {
+			color: #999;
 			line-height: 1.35em;
 			margin: {
 				bottom: 5px;
@@ -986,7 +986,7 @@ header + .container {
 
 //Footer modules
 footer {
-	margin-top: 25px;
+	margin-top: 45px;
 	background-color: #EDF2F8;
 	border-top: 1px solid #959595;
 	padding: 35px 0 55px 0;
