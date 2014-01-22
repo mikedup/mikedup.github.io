@@ -600,7 +600,9 @@ header + .container {
 		}
 		@include breakpoint(tablet) {
 			li {
+				min-height: 171px;
 				img {
+					min-height: 171px;
 					min-width: 748px;
 				}
 			}
@@ -648,8 +650,14 @@ header + .container {
 		font-size: em(26px);
 		margin: 0;
 	}
-	p {
-
+	@include breakpoint(tablet) {
+		padding: 15px 20px;
+		h3 {
+			font-size: em(24px);
+		}
+		p {
+			font-size: em(14px);
+		}
 	}
 	@include breakpoint(mobile-portrait) {
 		-webkit-border-top-left-radius: 0;
@@ -747,6 +755,13 @@ header + .container {
 			&:hover {
 				background-color: darken(#35414c, 5);
 			}
+		}
+	}
+	@include breakpoint(tablet) { 
+		top: 15px;
+		li {
+			font-size: em(14px);
+			padding: 10px 0;
 		}
 	}
 	@include breakpoint(mobile-portrait) {
