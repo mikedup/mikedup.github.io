@@ -60,7 +60,7 @@ header {
 	}
 }
 .header__contact {
-	padding-right: 10px;
+	padding-right: 5px;
 	ul { 
 		float: right;
 		margin: 12px 0;
@@ -205,6 +205,9 @@ header {
 			background: $lightBlue;
 			color: #fff;
 		}
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	.current, li:hover {
 		background: #f2f2f2;
@@ -240,6 +243,9 @@ header {
 				background: $lightBlue;
 				color: #fff;
 			}	
+			&:last-child {
+				margin-right: 5px;
+			}
 			ul {
 				background: $lightBlue;
 				display: none;
@@ -251,6 +257,9 @@ header {
 				li {
 					a {
 						color: #fff !important;
+					}
+					&:last-child {
+						margin-right: 0;
 					}
 				}
 				li:hover {
@@ -1119,7 +1128,7 @@ footer {
 // Styleguide specific styles -- *Not for use in production*
 h2.styleguide-heading {
 	font-size: em(48px);
-	margin: 0.5em 0 0.25em 0 !important;
+	margin: 0.5em 10px 0.25em 10px !important;
 	@include breakpoint(tablet) {
 		margin: {
 			right: 15px !important;
@@ -1128,20 +1137,28 @@ h2.styleguide-heading {
 	}
 	@include breakpoint(mobile-portrait) {
 		font-size: em(36px);
+		margin: {
+			right: 0 !important;
+			left: 0 !important;
+		}
 	}
 }
 h3.styleguide-heading {
 	font-size: em(28px);
-	margin: 2em 0 1em 0 !important;
+	margin: 2em 10px 1em 10px !important;
 	border-bottom: 1px solid #ccc;
 	@include breakpoint(tablet) {
 		margin: {
-			right: 15px !important;
-			left: 15px !important;
+			right: 10px !important;
+			left: 10px !important;
 		}
 	}
 	@include breakpoint(mobile-portrait) {
 		font-size: em(24px);
+		margin: {
+			right: 0 !important;
+			left: 0 !important;
+		}
 	}
 }
 
