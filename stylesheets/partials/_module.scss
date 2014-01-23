@@ -658,8 +658,13 @@ header + .container {
 		font: {
 		    family: 'Karbon Regular', Helvetica, sans-serif;
 		    size: em(26px);
-		  }
+		}
+		line-height: 1em;
 		margin: 0;
+	}
+	a {
+		font-size: em(18px);
+		text-decoration: none;
 	}
 	@include breakpoint(tablet) {
 		padding: 15px 20px;
