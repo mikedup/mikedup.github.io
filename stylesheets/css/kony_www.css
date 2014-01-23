@@ -743,8 +743,7 @@ header {
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  min-height: 345px; }
+  box-sizing: border-box; }
   .feed-box h3 {
     font-size: 1.3125em;
     line-height: 24px;

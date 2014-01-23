@@ -887,7 +887,6 @@ header + .container {
 	@include breakpoint(mobile-landscape) {
 		padding-bottom: 120px;
 	}
-
 }
 
 
@@ -903,7 +902,6 @@ header + .container {
 		bottom: 1px solid #ccc;
 	}
 	box-sizing: border-box;
-	min-height: 345px;
 	h3 {
 		font-size: em(21px);
 		line-height: 24px;
@@ -1043,8 +1041,8 @@ footer {
 	@include breakpoint(mobile-portrait) {
 		li {
 			a {
-			font-size: em(12px);
-			line-height: 12px;
+				font-size: em(12px);
+				line-height: 12px;
 			}
 		}
 	}
@@ -1054,9 +1052,8 @@ footer {
 	li {
 		line-height: 12px;
 		a {
-		font-size: em(12px);
-	}
-
+			font-size: em(12px);
+		}
 	}
 }
 .footer__social {
@@ -1124,7 +1121,7 @@ footer {
 		}
 		width: 276px;
 		li:first-child{
-		padding-left: 0;
+			padding-left: 0;
 		}
 	} 
 }
