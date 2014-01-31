@@ -997,6 +997,51 @@ header + .container {
 }
 
 
+//Article List module
+
+.article-list {
+	h3 {
+		color: #35414c;
+		font-size: em(30px);
+		line-height: 32px;
+	}
+}
+
+.article-list__item {
+	margin-bottom: 35px;
+
+	h4 {
+		color: #0090ea;
+		font-size: em(18px);
+		line-height: 20px;
+		margin-bottom: 2px;
+		a {
+			text-decoration: none;
+		}
+	}
+	p {
+		color: #586977;
+		font-size: em(14px);
+		line-height: 20px;
+		margin-top: 2px;
+	}
+	time {
+		color: #586977;
+		font-size: em(14px);
+		line-height: 20px;
+	}
+	@include breakpoint(mobile-tablet) {
+			time {
+				font-size: em(12px);
+			}
+		}
+	@include breakpoint(mobile-portrait) {
+		h4 {
+			font-size: em(16px);
+		}
+	}
+}
+
 //Footer modules
 footer {
 	margin-top: 45px;
