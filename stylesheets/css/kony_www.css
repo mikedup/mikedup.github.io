@@ -814,6 +814,36 @@ header {
       .feed-box__article .article-body .byline {
         font-size: 0.875em; } }
 
+.article-list h3 {
+  color: #35414c;
+  font-size: 1.875em;
+  line-height: 32px; }
+
+.article-list__item {
+  margin-bottom: 35px; }
+  .article-list__item h4 {
+    color: #0090ea;
+    font-size: 1.125em;
+    line-height: 20px;
+    margin-bottom: 2px; }
+    .article-list__item h4 a {
+      text-decoration: none; }
+  .article-list__item p {
+    color: #586977;
+    font-size: 0.875em;
+    line-height: 20px;
+    margin-top: 2px; }
+  .article-list__item time {
+    color: #586977;
+    font-size: 0.875em;
+    line-height: 20px; }
+  @media only screen and (max-width: 959px) {
+    .article-list__item time {
+      font-size: 0.75em; } }
+  @media only screen and (max-width: 767px) {
+    .article-list__item h4 {
+      font-size: 1em; } }
+
 footer {
   margin-top: 45px;
   background-color: #EDF2F8;
