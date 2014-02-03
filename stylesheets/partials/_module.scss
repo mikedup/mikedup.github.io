@@ -997,8 +997,69 @@ header + .container {
 }
 
 
-//Article List module
+// Basic Tabs module
+.tabs {
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	margin: 0.75em 0;
+	padding: 0;
+	li {
+		background-color: #fff;
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-top-right-radius: 3px;
+		-moz-border-radius-topleft: 3px;
+		-moz-border-radius-topright: 3px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px; 
+		box-sizing: border-box;
+		display: inline-block;
+		margin-bottom: -1px;
+		text-align: center;
+		a {
+			color: #444;
+			display: block;
+			padding: 0.75em 0;
+			text-decoration: none;
+		}
+		&.-active {
+			border: {
+				top: 1px solid #ddd;
+				right: 1px solid #ddd;
+				left: 1px solid #ddd;
+			}
+		}
+	}
+	&.-select {
+	  	background: #fff url(../../images/ui_select.png) 98% 50% no-repeat;
+	  	border: 1px solid #ddd;
+	  	border-radius: 0;
+	  	box-sizing: border-box;
+	  	color: #444;
+	  	cursor: pointer;
+	  	display: none;
+	  	font-size: 1em;
+	  	padding: 0.75em;
+	  	-webkit-appearance: none;
+	}
+	@include breakpoint(mobile-tablet) {
+		display: none !important;
+		li {
+			width: 100% !important;
+		}
+		&.-select {
+			background-position: 98% 50%;
+			display: block !important;
+		}
+	}
+	@include breakpoint(mobile-portrait) {
+		&.-select {
+			background-position: 96% 50%;
+		}
+	}
+}
 
+
+//Article List module
 .article-list {
 	h3 {
 		color: #35414c;
@@ -1006,10 +1067,8 @@ header + .container {
 		line-height: 32px;
 	}
 }
-
 .article-list__item {
 	margin-bottom: 35px;
-
 	h4 {
 		color: #0090ea;
 		font-size: em(18px);
@@ -1041,6 +1100,7 @@ header + .container {
 		}
 	}
 }
+
 
 //Footer modules
 footer {
@@ -1175,8 +1235,15 @@ footer {
 
 // Styleguide specific styles -- *Not for use in production*
 h2.styleguide-heading {
+	border-top: 2px dashed #eee;
 	font-size: em(48px);
-	margin: 0.5em 10px 0.25em 10px !important;
+	margin: 1.5em 10px 0.25em 10px !important;
+	padding-top: 0.5em;
+	&:first-child {
+		border-top: none;
+		margin-top: 0.5em !important;
+		padding-top: 0;
+	}
 	@include breakpoint(tablet) {
 		margin: {
 			right: 15px !important;
@@ -1194,7 +1261,7 @@ h2.styleguide-heading {
 h3.styleguide-heading {
 	font-size: em(28px);
 	margin: 2em 10px 1em 10px !important;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #ddd;
 	@include breakpoint(tablet) {
 		margin: {
 			right: 10px !important;

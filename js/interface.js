@@ -43,6 +43,11 @@ $(document).ready(function() {
 		$(this).add('.loc-list').toggleClass('active');
 	});
 
+	// Mobile select nav
+	$('.tabs.-select').change(function() {
+		window.location = $(this).find("option:selected").val();
+	});
+
 	// Flexslider
 	$(window).load(function(){
       $('.flexslider').flexslider({
