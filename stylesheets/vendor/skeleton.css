@@ -21,9 +21,9 @@
 /* #Base 960 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
-    .container .column,
-    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .grid-container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .grid-container .column,
+    .grid-container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
 
     /* Nested Column Classes */
@@ -31,43 +31,43 @@
     .column.omega, .columns.omega               { margin-right: 0; }
 
     /* Base Grid */
-    .container .one.column,
-    .container .one.columns                     { width: 40px;  }
-    .container .two.columns                     { width: 100px; }
-    .container .three.columns                   { width: 160px; }
-    .container .four.columns                    { width: 220px; }
-    .container .five.columns                    { width: 280px; }
-    .container .six.columns                     { width: 340px; }
-    .container .seven.columns                   { width: 400px; }
-    .container .eight.columns                   { width: 460px; }
-    .container .nine.columns                    { width: 520px; }
-    .container .ten.columns                     { width: 580px; }
-    .container .eleven.columns                  { width: 640px; }
-    .container .twelve.columns                  { width: 700px; }
-    .container .thirteen.columns                { width: 760px; }
-    .container .fourteen.columns                { width: 820px; }
-    .container .fifteen.columns                 { width: 880px; }
-    .container .sixteen.columns                 { width: 940px; }
+    .grid-container .one.column,
+    .grid-container .one.columns                     { width: 40px;  }
+    .grid-container .two.columns                     { width: 100px; }
+    .grid-container .three.columns                   { width: 160px; }
+    .grid-container .four.columns                    { width: 220px; }
+    .grid-container .five.columns                    { width: 280px; }
+    .grid-container .six.columns                     { width: 340px; }
+    .grid-container .seven.columns                   { width: 400px; }
+    .grid-container .eight.columns                   { width: 460px; }
+    .grid-container .nine.columns                    { width: 520px; }
+    .grid-container .ten.columns                     { width: 580px; }
+    .grid-container .eleven.columns                  { width: 640px; }
+    .grid-container .twelve.columns                  { width: 700px; }
+    .grid-container .thirteen.columns                { width: 760px; }
+    .grid-container .fourteen.columns                { width: 820px; }
+    .grid-container .fifteen.columns                 { width: 880px; }
+    .grid-container .sixteen.columns                 { width: 940px; }
 
-    .container .one-third.column                { width: 300px; }
-    .container .two-thirds.column               { width: 620px; }
+    .grid-container .one-third.column                { width: 300px; }
+    .grid-container .two-thirds.column               { width: 620px; }
 
     /* Offsets */
-    .container .offset-by-one                   { padding-left: 60px;  }
-    .container .offset-by-two                   { padding-left: 120px; }
-    .container .offset-by-three                 { padding-left: 180px; }
-    .container .offset-by-four                  { padding-left: 240px; }
-    .container .offset-by-five                  { padding-left: 300px; }
-    .container .offset-by-six                   { padding-left: 360px; }
-    .container .offset-by-seven                 { padding-left: 420px; }
-    .container .offset-by-eight                 { padding-left: 480px; }
-    .container .offset-by-nine                  { padding-left: 540px; }
-    .container .offset-by-ten                   { padding-left: 600px; }
-    .container .offset-by-eleven                { padding-left: 660px; }
-    .container .offset-by-twelve                { padding-left: 720px; }
-    .container .offset-by-thirteen              { padding-left: 780px; }
-    .container .offset-by-fourteen              { padding-left: 840px; }
-    .container .offset-by-fifteen               { padding-left: 900px; }
+    .grid-container .offset-by-one                   { padding-left: 60px;  }
+    .grid-container .offset-by-two                   { padding-left: 120px; }
+    .grid-container .offset-by-three                 { padding-left: 180px; }
+    .grid-container .offset-by-four                  { padding-left: 240px; }
+    .grid-container .offset-by-five                  { padding-left: 300px; }
+    .grid-container .offset-by-six                   { padding-left: 360px; }
+    .grid-container .offset-by-seven                 { padding-left: 420px; }
+    .grid-container .offset-by-eight                 { padding-left: 480px; }
+    .grid-container .offset-by-nine                  { padding-left: 540px; }
+    .grid-container .offset-by-ten                   { padding-left: 600px; }
+    .grid-container .offset-by-eleven                { padding-left: 660px; }
+    .grid-container .offset-by-twelve                { padding-left: 720px; }
+    .grid-container .offset-by-thirteen              { padding-left: 780px; }
+    .grid-container .offset-by-fourteen              { padding-left: 840px; }
+    .grid-container .offset-by-fifteen               { padding-left: 900px; }
 
 
 
@@ -77,50 +77,50 @@
     /* Note: Design for a width of 768px */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .container                                  { width: 768px; }
-        .container .column,
-        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .grid-container                                  { width: 768px; }
+        .grid-container .column,
+        .grid-container .columns                         { margin-left: 10px; margin-right: 10px;  }
         .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
         .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
         .alpha.omega                                { margin-left: 0; margin-right: 0; }
 
-        .container .one.column,
-        .container .one.columns                     { width: 28px; }
-        .container .two.columns                     { width: 76px; }
-        .container .three.columns                   { width: 124px; }
-        .container .four.columns                    { width: 172px; }
-        .container .five.columns                    { width: 220px; }
-        .container .six.columns                     { width: 268px; }
-        .container .seven.columns                   { width: 316px; }
-        .container .eight.columns                   { width: 364px; }
-        .container .nine.columns                    { width: 412px; }
-        .container .ten.columns                     { width: 460px; }
-        .container .eleven.columns                  { width: 508px; }
-        .container .twelve.columns                  { width: 556px; }
-        .container .thirteen.columns                { width: 604px; }
-        .container .fourteen.columns                { width: 652px; }
-        .container .fifteen.columns                 { width: 700px; }
-        .container .sixteen.columns                 { width: 748px; }
+        .grid-container .one.column,
+        .grid-container .one.columns                     { width: 28px; }
+        .grid-container .two.columns                     { width: 76px; }
+        .grid-container .three.columns                   { width: 124px; }
+        .grid-container .four.columns                    { width: 172px; }
+        .grid-container .five.columns                    { width: 220px; }
+        .grid-container .six.columns                     { width: 268px; }
+        .grid-container .seven.columns                   { width: 316px; }
+        .grid-container .eight.columns                   { width: 364px; }
+        .grid-container .nine.columns                    { width: 412px; }
+        .grid-container .ten.columns                     { width: 460px; }
+        .grid-container .eleven.columns                  { width: 508px; }
+        .grid-container .twelve.columns                  { width: 556px; }
+        .grid-container .thirteen.columns                { width: 604px; }
+        .grid-container .fourteen.columns                { width: 652px; }
+        .grid-container .fifteen.columns                 { width: 700px; }
+        .grid-container .sixteen.columns                 { width: 748px; }
 
-        .container .one-third.column                { width: 236px; }
-        .container .two-thirds.column               { width: 492px; }
+        .grid-container .one-third.column                { width: 236px; }
+        .grid-container .two-thirds.column               { width: 492px; }
 
         /* Offsets */
-        .container .offset-by-one                   { padding-left: 48px; }
-        .container .offset-by-two                   { padding-left: 96px; }
-        .container .offset-by-three                 { padding-left: 144px; }
-        .container .offset-by-four                  { padding-left: 192px; }
-        .container .offset-by-five                  { padding-left: 240px; }
-        .container .offset-by-six                   { padding-left: 288px; }
-        .container .offset-by-seven                 { padding-left: 336px; }
-        .container .offset-by-eight                 { padding-left: 384px; }
-        .container .offset-by-nine                  { padding-left: 432px; }
-        .container .offset-by-ten                   { padding-left: 480px; }
-        .container .offset-by-eleven                { padding-left: 528px; }
-        .container .offset-by-twelve                { padding-left: 576px; }
-        .container .offset-by-thirteen              { padding-left: 624px; }
-        .container .offset-by-fourteen              { padding-left: 672px; }
-        .container .offset-by-fifteen               { padding-left: 720px; }
+        .grid-container .offset-by-one                   { padding-left: 48px; }
+        .grid-container .offset-by-two                   { padding-left: 96px; }
+        .grid-container .offset-by-three                 { padding-left: 144px; }
+        .grid-container .offset-by-four                  { padding-left: 192px; }
+        .grid-container .offset-by-five                  { padding-left: 240px; }
+        .grid-container .offset-by-six                   { padding-left: 288px; }
+        .grid-container .offset-by-seven                 { padding-left: 336px; }
+        .grid-container .offset-by-eight                 { padding-left: 384px; }
+        .grid-container .offset-by-nine                  { padding-left: 432px; }
+        .grid-container .offset-by-ten                   { padding-left: 480px; }
+        .grid-container .offset-by-eleven                { padding-left: 528px; }
+        .grid-container .offset-by-twelve                { padding-left: 576px; }
+        .grid-container .offset-by-thirteen              { padding-left: 624px; }
+        .grid-container .offset-by-fourteen              { padding-left: 672px; }
+        .grid-container .offset-by-fifteen               { padding-left: 720px; }
     }
 
 
@@ -130,46 +130,46 @@
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        .container { width: 300px; }
-        .container .columns,
-        .container .column { margin: 0; }
+        .grid-container { width: 300px; }
+        .grid-container .columns,
+        .grid-container .column { margin: 0; }
 
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column  { width: 300px; }
+        .grid-container .one.column,
+        .grid-container .one.columns,
+        .grid-container .two.columns,
+        .grid-container .three.columns,
+        .grid-container .four.columns,
+        .grid-container .five.columns,
+        .grid-container .six.columns,
+        .grid-container .seven.columns,
+        .grid-container .eight.columns,
+        .grid-container .nine.columns,
+        .grid-container .ten.columns,
+        .grid-container .eleven.columns,
+        .grid-container .twelve.columns,
+        .grid-container .thirteen.columns,
+        .grid-container .fourteen.columns,
+        .grid-container .fifteen.columns,
+        .grid-container .sixteen.columns,
+        .grid-container .one-third.column,
+        .grid-container .two-thirds.column  { width: 300px; }
 
         /* Offsets */
-        .container .offset-by-one,
-        .container .offset-by-two,
-        .container .offset-by-three,
-        .container .offset-by-four,
-        .container .offset-by-five,
-        .container .offset-by-six,
-        .container .offset-by-seven,
-        .container .offset-by-eight,
-        .container .offset-by-nine,
-        .container .offset-by-ten,
-        .container .offset-by-eleven,
-        .container .offset-by-twelve,
-        .container .offset-by-thirteen,
-        .container .offset-by-fourteen,
-        .container .offset-by-fifteen { padding-left: 0; }
+        .grid-container .offset-by-one,
+        .grid-container .offset-by-two,
+        .grid-container .offset-by-three,
+        .grid-container .offset-by-four,
+        .grid-container .offset-by-five,
+        .grid-container .offset-by-six,
+        .grid-container .offset-by-seven,
+        .grid-container .offset-by-eight,
+        .grid-container .offset-by-nine,
+        .grid-container .offset-by-ten,
+        .grid-container .offset-by-eleven,
+        .grid-container .offset-by-twelve,
+        .grid-container .offset-by-thirteen,
+        .grid-container .offset-by-fourteen,
+        .grid-container .offset-by-fifteen { padding-left: 0; }
 
     }
 
@@ -180,29 +180,29 @@
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
-        .container .columns,
-        .container .column { margin: 0; }
+        .grid-container { width: 420px; }
+        .grid-container .columns,
+        .grid-container .column { margin: 0; }
 
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column { width: 420px; }
+        .grid-container .one.column,
+        .grid-container .one.columns,
+        .grid-container .two.columns,
+        .grid-container .three.columns,
+        .grid-container .four.columns,
+        .grid-container .five.columns,
+        .grid-container .six.columns,
+        .grid-container .seven.columns,
+        .grid-container .eight.columns,
+        .grid-container .nine.columns,
+        .grid-container .ten.columns,
+        .grid-container .eleven.columns,
+        .grid-container .twelve.columns,
+        .grid-container .thirteen.columns,
+        .grid-container .fourteen.columns,
+        .grid-container .fifteen.columns,
+        .grid-container .sixteen.columns,
+        .grid-container .one-third.column,
+        .grid-container .two-thirds.column { width: 420px; }
     }
 
 
@@ -210,7 +210,7 @@
 ================================================== */
 
     /* Self Clearing Goodness */
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+    .grid-container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
     /* Use clearfix class on parent to clear nested columns,
     or wrap each row of columns in a <div class="row"> */

@@ -7,8 +7,11 @@ header {
 	width: 100%;
 	h1 {
 		float: left;
-		line-height: 1em;
-		margin: 32px 0 0 0;
+		line-height: 1em !important;
+		margin: {
+			top: 32px !important;
+			bottom: 0 !important;
+		}
 	}
 	a, i {
 		color: #edf2f8;
@@ -28,7 +31,7 @@ header {
 		}
 	}
 	@include breakpoint(mobile-portrait) {
-		.container {
+		.grid-container {
 			margin: 0;
 			width: 100%;
 		}
@@ -40,7 +43,7 @@ header {
 		}
 	}
 	@include breakpoint(tablet) {
-		.container {
+		.grid-container {
 			max-width: 748px;
 		}
 	}
@@ -302,10 +305,10 @@ header {
 		color: #555;
 		margin-right: 4px;
 		padding: 5px 10px;
-		width: 80%;
+		width: 75%;
 		@include breakpoint(mobile-landscape) {
 			margin-right: 7px;
-			width: 85%;
+			width: 80%;
 		}
 		@include breakpoint(tablet) {
 			width: 90%;
@@ -547,15 +550,22 @@ header {
 	}
 }
 
-header + .container {
+header + .grid-container {
 	@include breakpoint(mobile-tablet) {
 		margin-top: 85px;
 	}
 }
 
 
-// Flexslider module
+
+
+
+
 @import "../vendor/flexslider.css";
+
+.taft { // Temporarily namespaces module styles to prevent them from affecting non-refactored pages
+
+// Flexslider module
 .flexslider {
 	.slides {
 		li {
@@ -1101,6 +1111,13 @@ header + .container {
 	}
 }
 
+} // End temporary.taft namespacing
+
+
+
+
+
+
 
 //Footer modules
 footer {
@@ -1113,7 +1130,7 @@ footer {
 		font-size: em(12px);
 	}
 	@include breakpoint(tablet) {
-		.container div:last-child{
+		.grid-container div:last-child{
 		margin-top: -40px;
 	}
 	}
