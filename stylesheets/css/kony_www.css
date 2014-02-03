@@ -893,6 +893,35 @@ header {
     .article-list__item h4 {
       font-size: 1em; } }
 
+.pagination {
+  text-align: center; }
+  .pagination ul {
+    padding-left: 0; }
+  @media only screen and (max-width: 959px) {
+    .pagination {
+      text-align: center; } }
+
+.pagination__item {
+  background-color: #dfdfdf;
+  display: inline-block;
+  margin-left: 15px; }
+  .pagination__item.-current {
+    background-color: #0476bd;
+    color: #fff;
+    padding: 3px 8px; }
+  .pagination__item:first-child {
+    margin-left: 0; }
+  .pagination__item a {
+    color: #0476bd;
+    display: block;
+    padding: 3px 8px;
+    text-decoration: none; }
+  @media only screen and (max-width: 959px) {
+    .pagination__item {
+      margin-left: 10px; }
+      .pagination__item:first-child {
+        margin-left: 0; } }
+
 footer {
   margin-top: 45px;
   background-color: #EDF2F8;
