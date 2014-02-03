@@ -1111,8 +1111,48 @@ header + .grid-container {
 	}
 }
 
-} // End temporary.taft namespacing
 
+//Pagination module
+.pagination {
+	text-align: center;
+	ul {
+		padding-left: 0;
+	}
+	@include breakpoint(mobile-tablet) {
+		text-align: center;
+	}
+}
+
+.pagination__item {
+	background-color: #dfdfdf;
+	display: inline-block;
+	margin-left: 15px;
+
+	&.-current {
+		background-color: #0476bd;
+		color: #fff;
+		padding: 3px 8px;
+	}
+	
+	&:first-child {
+		margin-left: 0;
+	}
+
+	a {
+		color: #0476bd;
+		display: block;
+		padding: 3px 8px;
+		text-decoration: none;
+	}
+	@include breakpoint(mobile-tablet) {
+		margin-left: 10px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+} // End temporary.taft namespacing
 
 
 

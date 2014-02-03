@@ -879,6 +879,33 @@ header {
   @media only screen and (max-width: 767px) {
     .taft .article-list__item h4 {
       font-size: 1em; } }
+.taft .pagination {
+  text-align: center; }
+  .taft .pagination ul {
+    padding-left: 0; }
+  @media only screen and (max-width: 959px) {
+    .taft .pagination {
+      text-align: center; } }
+.taft .pagination__item {
+  background-color: #dfdfdf;
+  display: inline-block;
+  margin-left: 15px; }
+  .taft .pagination__item.-current {
+    background-color: #0476bd;
+    color: #fff;
+    padding: 3px 8px; }
+  .taft .pagination__item:first-child {
+    margin-left: 0; }
+  .taft .pagination__item a {
+    color: #0476bd;
+    display: block;
+    padding: 3px 8px;
+    text-decoration: none; }
+  @media only screen and (max-width: 959px) {
+    .taft .pagination__item {
+      margin-left: 10px; }
+      .taft .pagination__item:first-child {
+        margin-left: 0; } }
 
 footer {
   margin-top: 45px;
