@@ -814,6 +814,55 @@ header {
       .feed-box__article .article-body .byline {
         font-size: 0.875em; } }
 
+.tabs {
+  border-bottom: 1px solid #ddd;
+  clear: both;
+  margin: 0.75em 0;
+  padding: 0; }
+  .tabs li {
+    background-color: #fff;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: -1px;
+    text-align: center; }
+    .tabs li a {
+      color: #444;
+      display: block;
+      padding: 0.75em 0;
+      text-decoration: none; }
+    .tabs li.-active {
+      border-top: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-left: 1px solid #ddd; }
+  .tabs.-select {
+    background: white url(../../images/ui_select.png) 98% 50% no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #444;
+    cursor: pointer;
+    display: none;
+    font-size: 1em;
+    padding: 0.75em;
+    -webkit-appearance: none; }
+  @media only screen and (max-width: 959px) {
+    .tabs {
+      display: none !important; }
+      .tabs li {
+        width: 100% !important; }
+      .tabs.-select {
+        background-position: 98% 50%;
+        display: block !important; } }
+  @media only screen and (max-width: 767px) {
+    .tabs.-select {
+      background-position: 96% 50%; } }
+
 footer {
   margin-top: 45px;
   background-color: #EDF2F8;
@@ -908,8 +957,14 @@ footer {
         padding-left: 0; } }
 
 h2.styleguide-heading {
+  border-top: 2px dashed #eee;
   font-size: 3em;
-  margin: 0.5em 10px 0.25em 10px !important; }
+  margin: 1.5em 10px 0.25em 10px !important;
+  padding-top: 0.5em; }
+  h2.styleguide-heading:first-child {
+    border-top: none;
+    margin-top: 0.5em !important;
+    padding-top: 0; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     h2.styleguide-heading {
       margin-right: 15px !important;
@@ -923,7 +978,7 @@ h2.styleguide-heading {
 h3.styleguide-heading {
   font-size: 1.75em;
   margin: 2em 10px 1em 10px !important;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #ddd; }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     h3.styleguide-heading {
       margin-right: 10px !important;
