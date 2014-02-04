@@ -550,7 +550,7 @@ header {
 	}
 }
 
-header + .grid-container {
+header + .grid-container, header + .container  {
 	@include breakpoint(mobile-tablet) {
 		margin-top: 85px;
 	}
@@ -1161,10 +1161,12 @@ header + .grid-container {
 
 //Footer modules
 footer {
-	margin-top: 45px;
+	clear: both;
 	background-color: #EDF2F8;
 	border-top: 1px solid #959595;
+	margin-top: 45px;
 	padding: 35px 0 55px 0;
+	width: 100%;
 	p {
 		color: #586977;
 		font-size: em(12px);
