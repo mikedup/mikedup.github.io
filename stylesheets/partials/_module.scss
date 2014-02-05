@@ -1071,11 +1071,7 @@ header + .grid-container, header + .container  {
 
 //Article List module
 .article-list {
-	h3 {
-		color: #35414c;
-		font-size: em(30px);
-		line-height: 32px;
-	}
+	
 }
 .article-list__item {
 	margin-bottom: 35px;
@@ -1152,9 +1148,28 @@ header + .grid-container, header + .container  {
 	}
 }
 
+
+//Glossary module
+.glossary {
+	padding-left: 0;
+	ul {
+		padding-left: 0;
+		li {
+			list-style-type: none;
+			margin-bottom: 15px;
+			a {
+				font-size: em(16px);
+				line-height: em(21px);
+				text-decoration: none;
+				@include breakpoint(mobile-tablet) {
+					font-size: em(14px);
+				}
+			}
+		}
+	}
+}
+
 } // End temporary.taft namespacing
-
-
 
 
 

@@ -58,7 +58,8 @@ body {
 .taft { // Temporarily namespaces base styles to prevent them from affecting non-refactored pages
 
 h1, h2, h3, h4, h5, h6 {
-	font: {
+	color: #35414c;
+  font: {
     family: 'Karbon Light', Helvetica, sans-serif;
     weight: normal;
   }
@@ -74,6 +75,10 @@ h2 {
     font-size: em(26px);
   }
 }
+h3 {
+    font-size: em(30px);
+    
+  }
 h4 {
   font: {
     family: 'Frutiger Regular', sans-serif;

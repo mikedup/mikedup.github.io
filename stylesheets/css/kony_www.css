@@ -29,6 +29,7 @@ body {
   padding: 0; }
 
 .taft h1, .taft h2, .taft h3, .taft h4, .taft h5, .taft h6 {
+  color: #35414c;
   font-family: 'Karbon Light', Helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.35em;
@@ -39,6 +40,8 @@ body {
   @media only screen and (max-width: 767px) {
     .taft h2 {
       font-size: 1.625em; } }
+.taft h3 {
+  font-size: 1.875em; }
 .taft h4 {
   font-family: 'Frutiger Regular', sans-serif;
   font-size: 1.5em; }
@@ -851,10 +854,6 @@ header {
   @media only screen and (max-width: 767px) {
     .taft .tabs.-select {
       background-position: 96% 50%; } }
-.taft .article-list h3 {
-  color: #35414c;
-  font-size: 1.875em;
-  line-height: 32px; }
 .taft .article-list__item {
   margin-bottom: 35px; }
   .taft .article-list__item h4 {
@@ -906,6 +905,20 @@ header {
       margin-left: 10px; }
       .taft .pagination__item:first-child {
         margin-left: 0; } }
+.taft .glossary {
+  padding-left: 0; }
+  .taft .glossary ul {
+    padding-left: 0; }
+    .taft .glossary ul li {
+      list-style-type: none;
+      margin-bottom: 15px; }
+      .taft .glossary ul li a {
+        font-size: 1em;
+        line-height: 1.3125em;
+        text-decoration: none; }
+        @media only screen and (max-width: 959px) {
+          .taft .glossary ul li a {
+            font-size: 0.875em; } }
 
 footer {
   clear: both;
