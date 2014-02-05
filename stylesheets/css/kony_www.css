@@ -714,21 +714,32 @@ header {
   background-size: 100%;
   margin-bottom: 35px !important;
   padding-bottom: 50px;
-  padding-top: 35px; }
+  padding-top: 35px;
+  position: relative; }
   .taft .featured-companies h3 {
     font-size: 1.25em;
     line-height: 24px;
     color: #35414c; }
+  .taft .featured-companies a {
+    bottom: 0;
+    display: block;
+    height: 50px;
+    position: absolute;
+    width: 100%; }
   @media only screen and (max-width: 767px) {
     .taft .featured-companies {
       background: url(../../images/homepage-customer-banner-mobile.gif) bottom no-repeat;
       background-size: 100%;
       padding-bottom: 85px; }
       .taft .featured-companies h3 {
-        font-size: 1em; } }
+        font-size: 1em; }
+      .taft .featured-companies a {
+        height: 85px; } }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     .taft .featured-companies {
-      padding-bottom: 120px; } }
+      padding-bottom: 120px; }
+      .taft .featured-companies a {
+        height: 120px; } }
 .taft .feed-box {
   background-color: #edf2f8;
   -webkit-box-shadow: -4px 0 0 0 #006097;

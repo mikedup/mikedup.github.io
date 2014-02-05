@@ -880,22 +880,35 @@ header + .grid-container, header + .container  {
 	margin-bottom: 35px !important;
 	padding-bottom: 50px;
 	padding-top: 35px;
+	position: relative;
 	h3 {
 		font-size: em(20px);
 		line-height: 24px;
 		color: #35414c;
 	}
+	a {
+		bottom: 0;
+		display: block;
+		height: 50px;
+		position: absolute;
+		width: 100%;
+	}
 	@include breakpoint(mobile-portrait) {
 		background: url(../../images/homepage-customer-banner-mobile.gif) bottom no-repeat;
 		background-size: 100%;
+		padding-bottom: 85px;
 		h3 {
 			font-size: em(16px);
 		}
-		padding-bottom: 85px;
-
+		a {
+			height: 85px;
+		}
 	}
 	@include breakpoint(mobile-landscape) {
 		padding-bottom: 120px;
+		a {
+			height: 120px;
+		}
 	}
 }
 
