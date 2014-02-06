@@ -857,11 +857,12 @@ header {
 .taft .article-list__item {
   margin-bottom: 35px; }
   .taft .article-list__item h4 {
-    color: #0090ea;
     font-size: 1.125em;
     line-height: 20px;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    margin-top: 0; }
     .taft .article-list__item h4 a {
+      color: #0090ea;
       text-decoration: none; }
   .taft .article-list__item p {
     color: #586977;
@@ -872,6 +873,8 @@ header {
     color: #586977;
     font-size: 0.875em;
     line-height: 20px; }
+  .taft .article-list__item .article-thumbnail img {
+    width: 100%; }
   @media only screen and (max-width: 959px) {
     .taft .article-list__item time {
       font-size: 0.75em; } }

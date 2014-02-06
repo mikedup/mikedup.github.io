@@ -1076,11 +1076,12 @@ header + .grid-container, header + .container  {
 .article-list__item {
 	margin-bottom: 35px;
 	h4 {
-		color: #0090ea;
 		font-size: em(18px);
 		line-height: 20px;
 		margin-bottom: 2px;
+		margin-top: 0;
 		a {
+			color: #0090ea;
 			text-decoration: none;
 		}
 	}
@@ -1094,6 +1095,11 @@ header + .grid-container, header + .container  {
 		color: #586977;
 		font-size: em(14px);
 		line-height: 20px;
+	}
+	.article-thumbnail {
+		img {
+			width: 100%;
+		}
 	}
 	@include breakpoint(mobile-tablet) {
 			time {
@@ -1168,6 +1174,10 @@ header + .grid-container, header + .container  {
 		}
 	}
 }
+
+
+
+
 
 } // End temporary.taft namespacing
 
