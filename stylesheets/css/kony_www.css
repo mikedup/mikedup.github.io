@@ -866,21 +866,33 @@ header {
       text-decoration: none; }
   .taft .article-list__item p {
     color: #586977;
-    font-size: 0.875em;
-    line-height: 20px;
+    font-size: 1em;
+    line-height: 22px;
+    margin-bottom: 8px;
     margin-top: 2px; }
   .taft .article-list__item time {
     color: #586977;
     font-size: 0.875em;
     line-height: 20px; }
+  .taft .article-list__item .article-link {
+    margin-top: 10px;
+    text-decoration: none; }
   .taft .article-list__item .article-thumbnail img {
     width: 100%; }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .taft .article-list__item .article-thumbnail img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; } }
+    @media only screen and (max-width: 767px) {
+      .taft .article-list__item .article-thumbnail img {
+        margin-bottom: 15px; } }
   @media only screen and (max-width: 959px) {
-    .taft .article-list__item time {
-      font-size: 0.75em; } }
-  @media only screen and (max-width: 767px) {
     .taft .article-list__item h4 {
-      font-size: 1em; } }
+      font-size: 1em; }
+    .taft .article-list__item time {
+      font-size: 0.875em; } }
 .taft .pagination {
   text-align: center; }
   .taft .pagination ul {
@@ -916,10 +928,9 @@ header {
       list-style-type: none;
       margin-bottom: 15px; }
       .taft .glossary ul li a {
-        font-size: 1em;
         line-height: 1.3125em;
         text-decoration: none; }
-        @media only screen and (max-width: 959px) {
+        @media only screen and (max-width: 767px) {
           .taft .glossary ul li a {
             font-size: 0.875em; } }
 
