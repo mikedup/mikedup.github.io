@@ -1089,18 +1089,20 @@ header + .grid-container, header + .container  {
 .article-list__item {
 	margin-bottom: 35px;
 	h4 {
-		color: #0090ea;
 		font-size: em(18px);
 		line-height: 20px;
 		margin-bottom: 2px;
+		margin-top: 0;
 		a {
+			color: #0090ea;
 			text-decoration: none;
 		}
 	}
 	p {
 		color: #586977;
-		font-size: em(14px);
-		line-height: 20px;
+		font-size: em(16px);
+		line-height: 22px;
+		margin-bottom: 8px;
 		margin-top: 2px;
 	}
 	time {
@@ -1108,14 +1110,38 @@ header + .grid-container, header + .container  {
 		font-size: em(14px);
 		line-height: 20px;
 	}
+	.article-link {
+		margin-top: 10px;
+		text-decoration: none;
+	}
+	.article-thumbnail {
+		img {
+			width: 100%;
+			@include breakpoint(mobile-landscape) {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			@include breakpoint(mobile-portrait) {
+				margin-bottom: 15px;
+			}
+		}
+	}
 	@include breakpoint(mobile-tablet) {
-			time {
-				font-size: em(12px);
+		h4 {
+			font-size: em(16px);
+			}
+		time {
+			font-size: em(14px);
 			}
 		}
 	@include breakpoint(mobile-portrait) {
 		h4 {
-			font-size: em(16px);
+			//text-align: center;
+		}
+		p {
+			//text-align: center;
 		}
 	}
 }
@@ -1171,16 +1197,20 @@ header + .grid-container, header + .container  {
 			list-style-type: none;
 			margin-bottom: 15px;
 			a {
-				font-size: em(16px);
+				//font-size: em(16px);
 				line-height: em(21px);
 				text-decoration: none;
-				@include breakpoint(mobile-tablet) {
+				@include breakpoint(mobile-portrait) {
 					font-size: em(14px);
 				}
 			}
 		}
 	}
 }
+
+
+
+
 
 } // End temporary.taft namespacing
 
