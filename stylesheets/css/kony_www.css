@@ -71,6 +71,8 @@ header {
     text-decoration: none; }
   header a:hover {
     color: #edf2f8; }
+  header .grid-container {
+    overflow: visible; }
   @media only screen and (max-width: 959px) {
     header {
       min-height: 55px;

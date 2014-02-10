@@ -20,6 +20,9 @@ header {
 	a:hover {
 		color: #edf2f8;
 	}
+	.grid-container {
+		overflow: visible;
+	}
 	@include breakpoint(mobile-tablet) {
 		min-height: 55px;
 		position: fixed; 
