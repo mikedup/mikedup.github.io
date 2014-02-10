@@ -293,6 +293,8 @@ header {
 	// Header search for mobile
 	.header__search {
 		background: transparent;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		display: none;
 		margin: 0;
@@ -400,6 +402,8 @@ header {
 			width: 100%;
 			li {
 				border-top: 1px solid #dadada;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
 				box-sizing: border-box;
 				a {
 					color: $lightBlue;
@@ -493,6 +497,8 @@ header {
 					top: 1px solid #d0d0d0; 
 					left: 1px solid #d0d0d0;
 				}
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
 				box-sizing: border-box;
 				float: left;
 				width: 50%;
@@ -654,6 +660,8 @@ header + .grid-container, header + .container  {
 }
 .flexslider__slide-content {
 	background-color: rgba(255,255,255, 0.9);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-border-radius: 3px; 
 	-moz-border-radius: 3px; 
@@ -809,6 +817,8 @@ header + .grid-container, header + .container  {
 	}
 }
 .featured-clouds__individual {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
 	box-sizing: border-box;
 	padding: {
 		right: 15px;
@@ -924,6 +934,8 @@ header + .grid-container, header + .container  {
 		right: 1px solid #ccc;
 		bottom: 1px solid #ccc;
 	}
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
 	box-sizing: border-box;
 	h3 {
 		font-size: em(21px);
@@ -964,6 +976,8 @@ header + .grid-container, header + .container  {
 		padding-top: 10px;
 	}
 	.article-type {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box; 
 		box-sizing: border-box;
 		display: block;
 		float: left;
@@ -979,6 +993,8 @@ header + .grid-container, header + .container  {
 		}
 	}
 	.article-body {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box; 
 		box-sizing: border-box;
 		float: left;
 		padding: 0 15px;
@@ -1034,6 +1050,8 @@ header + .grid-container, header + .container  {
 		-moz-border-radius-topright: 3px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box; 
 		box-sizing: border-box;
 		display: inline-block;
 		margin-bottom: -1px;
@@ -1056,6 +1074,8 @@ header + .grid-container, header + .container  {
 	  	background: #fff url(../../images/ui_select.png) 98% 50% no-repeat;
 	  	border: 1px solid #ddd;
 	  	border-radius: 0;
+	  	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box; 
 	  	box-sizing: border-box;
 	  	color: #444;
 	  	cursor: pointer;
