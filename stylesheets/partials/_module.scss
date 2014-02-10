@@ -57,6 +57,7 @@ header {
 	overflow: hidden;
 	text-indent: 120%;
 	white-space: nowrap;
+	width: 100%;
 	@include breakpoint(mobile-tablet) {
 		min-height: 25px;
 		width: 100%;
