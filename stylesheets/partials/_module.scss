@@ -1274,6 +1274,24 @@ header + .grid-container, header + .container  {
 }
 
 // Video detail module
+
+.detail {
+	a {
+		text-decoration: none;
+	}
+	h3 {
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	p {
+		color: #586977;
+		line-height: 22px;
+	}
+}
+.socialicon {
+	height: 27px;
+	width: 27px;
+}
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -1281,7 +1299,6 @@ header + .grid-container, header + .container  {
 	padding-top: 25px;
 	height: 0;
 	margin-bottom: 20px;
-	margin-top: 50px;
 }
 
 .videoWrapper iframe {

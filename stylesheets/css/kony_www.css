@@ -998,14 +998,24 @@ header {
   .taft .featured-resources .row {
     display: inline-block;
     margin-bottom: 5px; }
+.taft .detail a {
+  text-decoration: none; }
+.taft .detail h3 {
+  margin-bottom: 20px;
+  margin-top: 0; }
+.taft .detail p {
+  color: #586977;
+  line-height: 22px; }
+.taft .socialicon {
+  height: 27px;
+  width: 27px; }
 .taft .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
   height: 0;
-  margin-bottom: 20px;
-  margin-top: 50px; }
+  margin-bottom: 20px; }
 .taft .videoWrapper iframe {
   position: absolute;
   top: 0;
