@@ -58,9 +58,11 @@ header {
 	max-width: 135px;
 	min-height: 41px;
 	overflow: hidden;
+	position: relative;
 	text-indent: 120%;
 	white-space: nowrap;
 	width: 100%;
+	z-index: 2;
 	@include breakpoint(mobile-tablet) {
 		min-height: 25px;
 		width: 100%;
