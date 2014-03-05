@@ -1325,8 +1325,7 @@ header + .grid-container, header + .container  {
 	}
 	iframe.whitepaper {
 		style: overflow hidden; 
-		scrolling: no; 
-		class: mk_form;
+		scrolling: none;
 	}
 	li {
 		color: #586977;
@@ -1343,6 +1342,37 @@ header + .grid-container, header + .container  {
 }
 
 
+// Form styles
+
+label {
+	clear: both;
+	display: block;
+	padding-bottom: 10px;
+	&:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+	b {
+		box-sizing: border-box;
+		color: #707070;
+		display: inline-block;
+		float: left;
+		text-align: right;
+		font-family: "Frutiger Regular", Arial, sans-serif;
+		font-size: em(14px);
+		padding-right: 10px;
+		width: 35%;
+	}
+	input {
+		box-sizing: border-box;
+		float: left;
+		width: 65%;
+	}
+
+}
 
 
 } // End temporary.taft namespacing

@@ -1031,8 +1031,7 @@ header {
   margin-top: 0; }
 .taft .detail iframe.whitepaper {
   style: overflow hidden;
-  scrolling: no;
-  class: mk_form; }
+  scrolling: none; }
 .taft .detail li {
   color: #586977;
   line-height: 22px; }
@@ -1042,6 +1041,30 @@ header {
 .taft .socialicon {
   height: 27px;
   width: 27px; }
+.taft label {
+  clear: both;
+  display: block;
+  padding-bottom: 10px; }
+  .taft label:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0; }
+  .taft label b {
+    box-sizing: border-box;
+    color: #707070;
+    display: inline-block;
+    float: left;
+    text-align: right;
+    font-family: "Frutiger Regular", Arial, sans-serif;
+    font-size: 0.875em;
+    padding-right: 10px;
+    width: 35%; }
+  .taft label input {
+    box-sizing: border-box;
+    float: left;
+    width: 65%; }
 
 footer {
   clear: both;
