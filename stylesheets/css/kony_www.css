@@ -1024,6 +1024,24 @@ header {
   left: 0;
   width: 100%;
   height: 100%; }
+.taft .detail a {
+  text-decoration: none; }
+.taft .detail h3 {
+  margin-bottom: 20px;
+  margin-top: 0; }
+.taft .detail iframe.whitepaper {
+  style: overflow hidden;
+  scrolling: no;
+  class: mk_form; }
+.taft .detail li {
+  color: #586977;
+  line-height: 22px; }
+.taft .detail p {
+  color: #586977;
+  line-height: 22px; }
+.taft .socialicon {
+  height: 27px;
+  width: 27px; }
 
 footer {
   clear: both;
