@@ -1342,6 +1342,8 @@ header + .grid-container, header + .container  {
 }
 
 
+
+
 // Form styles
 
 label {
@@ -1372,6 +1374,21 @@ label {
 		width: 65%;
 	}
 
+}
+
+
+//Buttons module 
+
+a.button {
+	border: none;
+	background: $lightBlue;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Frutiger Regular', sans-serif;
+	padding: 7px 15px;
+	&:hover {
+		background-color: lighten($lightBlue, 3);
+	}
 }
 
 

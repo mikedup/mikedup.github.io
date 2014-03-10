@@ -45,6 +45,8 @@ body {
 .taft h4 {
   font-family: 'Frutiger Regular', sans-serif;
   font-size: 1.5em; }
+.taft h5 {
+  font-size: 1.375em; }
 
 a {
   color: #00a3d9; }
@@ -1065,6 +1067,15 @@ header {
     box-sizing: border-box;
     float: left;
     width: 65%; }
+.taft a.button {
+  border: none;
+  background: #00a3d9;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Frutiger Regular', sans-serif;
+  padding: 7px 15px; }
+  .taft a.button:hover {
+    background-color: #00aee8; }
 
 footer {
   clear: both;
