@@ -1386,13 +1386,18 @@ label {
 		font-size: em(14px);
 		padding-right: 10px;
 		width: 35%;
+
 	}
 	input {
 		box-sizing: border-box;
 		float: left;
 		width: 65%;
 	}
-
+	@include breakpoint(tablet) {
+		b {
+			font-size: em(12px);
+		}
+	}
 }
 
 button {

@@ -47,6 +47,9 @@ body {
   font-size: 1.5em; }
 .taft h5 {
   font-size: 1.375em; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .taft h5 {
+      font-size: 1.125em; } }
 
 a {
   color: #00a3d9; }
@@ -1079,6 +1082,9 @@ header {
     box-sizing: border-box;
     float: left;
     width: 65%; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .taft label b {
+      font-size: 0.75em; } }
 .taft button {
   font-size: 1em;
   float: right; }
