@@ -1313,6 +1313,102 @@ header + .grid-container, header + .container  {
 
 
 
+// Whitepaper detail module
+
+.detail {
+	a {
+		text-decoration: none;
+	}
+	h3 {
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	iframe.whitepaper {
+		style: overflow hidden; 
+		scrolling: none;
+	}
+	li {
+		color: #586977;
+		line-height: 22px;
+	}
+	p {
+		color: #586977;
+		line-height: 22px;
+	}
+}
+.socialicon {
+	height: 27px;
+	width: 27px;
+}
+
+
+
+
+//Buttons module 
+
+a.button {
+	border: none;
+	background: $lightBlue;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Frutiger Regular', sans-serif;
+	padding: 7px 15px;
+	&:hover {
+		background-color: lighten($lightBlue, 3);
+	}
+}
+
+
+
+// Form styles
+
+label {
+	clear: both;
+	display: block;
+	padding-bottom: 10px;
+	&:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+	b {
+		box-sizing: border-box;
+		color: #707070;
+		display: inline-block;
+		float: left;
+		text-align: right;
+		font-family: "Frutiger Regular", Arial, sans-serif;
+		font-size: em(14px);
+		padding-right: 10px;
+		width: 35%;
+
+	}
+	input {
+		box-sizing: border-box;
+		float: left;
+		width: 65%;
+	}
+	@include breakpoint(tablet) {
+		b {
+			font-size: em(12px);
+		}
+	}
+}
+
+button {
+	@extend a.button;
+	font-size: em(16px);
+	float: right;
+}
+
+
+
+
 } // End temporary.taft namespacing
 
 

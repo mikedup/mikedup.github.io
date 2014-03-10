@@ -85,6 +85,12 @@ h4 {
     size: em(24px);
   }
 }
+h5 {
+  font-size: em(22px);
+  @include breakpoint(tablet) {
+    font-size: em(18px);
+  }
+}
 
 } // End temporary .taft namespace
 
