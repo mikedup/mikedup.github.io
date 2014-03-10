@@ -1344,6 +1344,25 @@ header + .grid-container, header + .container  {
 
 
 
+//Buttons module 
+
+a.button {
+	border: none;
+	background: $lightBlue;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Frutiger Regular', sans-serif;
+	padding: 7px 15px;
+	&:hover {
+		background-color: lighten($lightBlue, 3);
+	}
+}
+
+
+
 // Form styles
 
 label {
@@ -1376,20 +1395,13 @@ label {
 
 }
 
-
-//Buttons module 
-
-a.button {
-	border: none;
-	background: $lightBlue;
-	border-radius: 3px;
-	color: #fff;
-	font-family: 'Frutiger Regular', sans-serif;
-	padding: 7px 15px;
-	&:hover {
-		background-color: lighten($lightBlue, 3);
-	}
+button {
+	@extend a.button;
+	font-size: em(16px);
+	float: right;
 }
+
+
 
 
 } // End temporary.taft namespacing

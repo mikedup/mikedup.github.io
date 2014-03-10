@@ -1043,6 +1043,18 @@ header {
 .taft .socialicon {
   height: 27px;
   width: 27px; }
+.taft a.button, .taft button {
+  border: none;
+  background: #00a3d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Frutiger Regular', sans-serif;
+  padding: 7px 15px; }
+  .taft a.button:hover, .taft button:hover {
+    background-color: #00aee8; }
 .taft label {
   clear: both;
   display: block;
@@ -1067,15 +1079,9 @@ header {
     box-sizing: border-box;
     float: left;
     width: 65%; }
-.taft a.button {
-  border: none;
-  background: #00a3d9;
-  border-radius: 3px;
-  color: #fff;
-  font-family: 'Frutiger Regular', sans-serif;
-  padding: 7px 15px; }
-  .taft a.button:hover {
-    background-color: #00aee8; }
+.taft button {
+  font-size: 1em;
+  float: right; }
 
 footer {
   clear: both;
