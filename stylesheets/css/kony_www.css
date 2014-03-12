@@ -1046,6 +1046,62 @@ header {
 .taft .socialicon {
   height: 27px;
   width: 27px; }
+.taft .author {
+  margin-left: 0;
+  margin-top: 30px; }
+  @media only screen and (max-width: 767px) {
+    .taft .author {
+      margin-top: 5px; } }
+.taft .bio {
+  margin-top: 30px; }
+  .taft .bio h5 {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .taft .bio .thumbnail {
+    margin-right: 0; }
+    .taft .bio .thumbnail img {
+      border-radius: 150px;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      background: url(http://link-to-your/image.jpg) no-repeat;
+      height: 80px;
+      width: 80px; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .taft .bio h5 {
+      margin-left: 10px; }
+    .taft .bio p {
+      margin-left: 10px; }
+    .taft .bio .thumbnail img {
+      height: 70px;
+      width: 70px; } }
+  @media only screen and (max-width: 767px) {
+    .taft .bio h5 {
+      margin-left: 0; } }
+.taft .detail a {
+  text-decoration: none; }
+.taft .detail h3 {
+  line-height: 32px;
+  margin-bottom: 20px;
+  margin-top: 0; }
+.taft .detail h3.datetime {
+  margin-bottom: 5px; }
+.taft .detail h5 {
+  display: block; }
+.taft .detail iframe.webinar {
+  style: overflow hidden;
+  scrolling: none; }
+.taft .detail li {
+  color: #586977;
+  line-height: 22px; }
+.taft .detail p {
+  color: #586977;
+  line-height: 22px; }
+.taft .detail p.datetime {
+  margin-top: 0; }
+.taft .socialicon {
+  height: 27px;
+  width: 27px; }
 .taft a.button, .taft button {
   border: none;
   background: #00a3d9;

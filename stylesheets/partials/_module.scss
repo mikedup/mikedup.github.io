@@ -1342,6 +1342,93 @@ header + .grid-container, header + .container  {
 }
 
 
+// Webinar detail module
+
+.author {
+	margin-left: 0;
+	margin-top: 30px;
+	@include breakpoint(mobile-portrait) {
+		margin-top: 5px;
+	}
+}
+.bio {
+	margin-top: 30px;
+	h5 {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 0;
+		}
+	
+	.thumbnail {
+		margin-right: 0;
+		img {
+			border-radius: 150px;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+			background: url(http://link-to-your/image.jpg) no-repeat;
+			height: 80px;
+			width: 80px;
+		}
+	}
+	@include breakpoint(tablet) {
+		h5 {
+			margin-left: 10px;
+		}
+		p {
+			margin-left: 10px;
+		}
+		.thumbnail img {
+			height: 70px;
+			width: 70px;
+		}
+	}
+	@include breakpoint(mobile-portrait) {
+		h5 {
+			margin-left: 0;
+		}
+	}	
+}
+.detail {
+	a {
+		text-decoration: none;
+	}
+	h3 {
+		line-height: 32px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		}
+		h3.datetime {
+			margin-bottom: 5px;
+		}
+	h5 {
+		display: block;
+	}
+	iframe.webinar {
+		style: overflow hidden; 
+		scrolling: none;
+	}
+	li {
+		color: #586977;
+		line-height: 22px;
+	}
+	p {
+		color: #586977;
+		line-height: 22px;
+	}
+	p.datetime {
+			margin-top: 0;
+		}
+}
+
+
+.socialicon {
+	height: 27px;
+	width: 27px;
+}
+
+
+
+
 
 
 //Buttons module 
