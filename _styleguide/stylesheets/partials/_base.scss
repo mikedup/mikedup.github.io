@@ -1,0 +1,109 @@
+/* Base styles */
+
+// Fonts
+@font-face {
+  	font-family: 'Frutiger Regular';
+  	src: url("../../fonts/FrutigerNext_LT_Regular.eot");
+  	src: url("../../fonts/FrutigerNext_LT_Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/FrutigerNext_LT_Regular.woff") format("woff"), url("../../fonts/FrutigerNext_LT_Regular.ttf") format("truetype");
+  	font-weight: normal;
+  	font-style: normal; 
+}
+@font-face {
+    font-family: 'Karbon Regular';
+    src: url("../../fonts/karbon-regular-webfont.eot");
+    src: url("../../fonts/karbon-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-regular-webfont.woff") format("woff"), url("../../fonts/karbon-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+  	font-family: 'Karbon Light';
+  	src: url("../../fonts/karbon-light-webfont.eot");
+  	src: url("../../fonts/karbon-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-light-webfont.woff") format("woff"), url("../../fonts/karbon-light-webfont.ttf") format("truetype");
+  	font-weight: normal;
+  	font-style: normal; 
+}
+
+// Em function
+@function em($target, $context: 16px) {
+   @return #{$target / $context}em;
+}
+
+// Media queries
+@mixin breakpoint($point) {
+  @if $point == mobile-portrait {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $point == mobile-tablet {
+    @media only screen and (max-width: 959px) { @content; }
+  }
+  @else if $point == tablet {
+    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; } 
+  }
+  @else if $point == mobile-landscape {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+}
+
+// Colors
+$lightBlue: #00a3d9;
+
+
+body {
+	font-family: 'Frutiger Regular', sans-serif;
+  font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.taft { // Temporarily namespaces base styles to prevent them from affecting non-refactored pages
+
+h1, h2, h3, h4, h5, h6 {
+	color: #35414c;
+  font: {
+    family: 'Karbon Light', Helvetica, sans-serif;
+    weight: normal;
+  }
+  line-height: 1.35em;
+  margin: 1em 0;
+}
+h2 {
+  font: {
+    family: 'Karbon Regular', Helvetica, sans-serif;
+    size: em(40px);
+  }
+  @include breakpoint(mobile-portrait) {
+    font-size: em(26px);
+  }
+}
+h3 {
+    font-size: em(30px);
+    
+  }
+h4 {
+  font: {
+    family: 'Frutiger Regular', sans-serif;
+    size: em(24px);
+  }
+}
+h5 {
+  font-size: em(22px);
+  @include breakpoint(tablet) {
+    font-size: em(18px);
+  }
+}
+
+} // End temporary .taft namespace
+
+
+
+a {
+	color: $lightBlue;
+}
+a:hover {
+	color: darken($lightBlue, 5);
+}
+
+// Helper classes
+.centered {
+  text-align: center;
+}
