@@ -1,0 +1,24 @@
+// Variables
+	// Header
+	$headerColor: #00a3d9;
+
+	// Homepage slideshow
+	$homepageSlide1: #fff;
+	$homepageSlide1Text: #f04c23;
+	$homepageSlide2: #fa6604;
+	$homepageSlide2Text: #fff;
+	$homepageSlide3: #0da3d7;
+	$homepageSlide3Text: #fff;
+	$homepageSlide4: #0a9c4a;
+	$homepageSlide4Text: #fff;
+
+// Import Sass partials
+@import 'partials/_base';
+@import 'partials/_layout';
+@import 'partials/_module';
+@import 'partials/_state';
+
+/* Module overrides */
+.header__search, .header__search__input {
+	background: darken($headerColor, 7);
+}
