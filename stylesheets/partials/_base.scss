@@ -55,8 +55,6 @@ body {
 	padding: 0;
 }
 
-.taft { // Temporarily namespaces base styles to prevent them from affecting non-refactored pages
-
 h1, h2, h3, h4, h5, h6 {
 	color: #35414c;
   font: {
@@ -91,10 +89,6 @@ h5 {
     font-size: em(18px);
   }
 }
-
-} // End temporary .taft namespace
-
-
 
 a {
 	color: $lightBlue;
