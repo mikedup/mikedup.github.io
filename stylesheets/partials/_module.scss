@@ -7,8 +7,8 @@ header {
 	margin-bottom: 50px;
 	width: 100%;
 
-	.grid-container {
-		overflow: visible;
+	h1 {
+		margin: 0.75em 0 0.5em 0;
 	}
 
 	@include breakpoint(mobile-tablet) {
@@ -61,35 +61,37 @@ header + .grid-container, header + .container  {
 
 
 
-// Text module
+// Article Detail module
 
-.img {
-	display: inline-block;
-	float: right;
-	}
-.text {
-	a {
-		text-decoration: none;
-	}
-	h2 {
-		margin: 0;
-	}
-	h5 {
+.article-detail__body {
+	h2:first-child {
 		margin-top: 0;
 	}
-	iframe.form {
-		style: overflow hidden; 
-		scrolling: none;
+	h2 + h3 {
+		font-size: em(24px);
+		margin-top: -20px; // Reduce gap without affecting h2 margin in case there is no subheading
+		margin-bottom: 0.75em;
 	}
-	li {
-		color: #586977;
-		line-height: 22px;
-	}
-	p {
-		color: #586977;
-		line-height: 22px;
+	img {
+		margin: 0 0 1em 0;
+		&.-left {
+			margin-right: 30px;
+		}
+		&.-left {
+			margin-left: 30px;
+		}
 	}
 }
+
+.article-detail__sidebar {
+	h3 {
+		font-size: em(24px);
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
 .socialicon {
 	height: 27px;
 	width: 27px;
