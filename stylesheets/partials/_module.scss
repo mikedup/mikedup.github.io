@@ -5,6 +5,7 @@ header {
 	background-color: $headerColor;
 	padding-bottom: 0;
 	margin-bottom: 50px;
+	overflow: auto; // FF fix for bizarre margin calculation
 	width: 100%;
 
 	h1 {
@@ -38,7 +39,6 @@ header {
 
 
 // Article Detail module
-
 .article-detail__body {
 	h2:first-child {
 		margin-top: 0;
@@ -62,7 +62,6 @@ header {
 		}
 	}
 }
-
 .article-detail__sidebar {
 	h3 {
 		font-size: em(24px);
@@ -71,7 +70,6 @@ header {
 		}
 	}
 }
-
 .share {
 	margin: 10px 0 0 0;
 	padding: 0;
@@ -99,9 +97,11 @@ header {
 	}
 }
 
+
 // Forms
 .whitepaper-form {
 	border: 1px solid #ddd;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 20px;
 	.row {
@@ -120,6 +120,7 @@ label {
 		height: 0;
 	}
 	b {
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		color: #707070;
 		display: inline-block;
@@ -137,6 +138,7 @@ label {
 	}
 	input {
 		border: 1px solid #ddd;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		float: left;
 		font-size: em(12px);
