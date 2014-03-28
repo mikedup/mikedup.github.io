@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Kony Landing Page</title>
@@ -65,7 +62,7 @@
 
 				<h3>Your whitepaper is one click away</h3>
 
-				<form id="form" action="">
+				<form class="whitepaper-form" action="">
 					<label for="firstname"><b>First name:</b>
 						<input id="firstname" type="text" />
 					</label>
@@ -119,15 +116,15 @@
 						</select>
 					</label>
 
-					<button type="button">Submit</button>
+					<div class="row">
+						<button type="button">Submit</button>
+					</div>
 
 				</form>
 			</aside>
 		</article>
+	</div><!-- grid-container -->
 
-</div><!-- grid-container -->
-	
-	<!-- Footer module -->
 	<footer>
 		<div class="grid-container">	
 			<div class="eleven columns">
@@ -164,9 +161,9 @@
     				<li class="slideshare">
     					<a href="http://www.slideshare.net/KonySolutionsInc">Slideshare</a>
     				</li>
-    				<li class="google">
-    					<a href="https://plus.google.com/108006109343739267055/posts">Google Plus</a>
-    				</li>
+					<li class="google">
+						<a href="https://plus.google.com/108006109343739267055/posts">Google Plus</a>
+					</li>
     			</ul>
   			</div>
 
@@ -180,7 +177,6 @@
   			</div>
 		</div>
 	</footer>
-	<!-- End Footer module -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>

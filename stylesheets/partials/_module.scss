@@ -11,25 +11,10 @@ header {
 		margin: 0.75em 0 0.5em 0;
 	}
 
-	@include breakpoint(mobile-tablet) {
-		min-height: 55px;
-		position: fixed; 
-		top: 0;
-		z-index: 10;
-		h1 {
-			margin-top: 10px !important;
-			width: 100px !important;
-		}
-	}
 	@include breakpoint(mobile-portrait) {
-		.grid-container {
-			margin: 0;
-			width: 100%;
-		}
-	}
-	@include breakpoint(tablet) {
-		.grid-container {
-			max-width: 748px;
+		h1 {
+			padding-top: 10px;
+			max-width: 100px;
 		}
 	}
 }
@@ -52,15 +37,6 @@ header {
 }
 
 
-header + .grid-container, header + .container  {
-	@include breakpoint(mobile-tablet) {
-		margin-top: 85px;
-	}
-}
-
-
-
-
 // Article Detail module
 
 .article-detail__body {
@@ -71,6 +47,10 @@ header + .grid-container, header + .container  {
 		font-size: em(24px);
 		margin-top: -20px; // Reduce gap without affecting h2 margin in case there is no subheading
 		margin-bottom: 0.75em;
+		@include breakpoint(mobile-portrait) {
+	      font-size: em(21px);
+	      margin-top: -15px;
+	    }
 	}
 	img {
 		margin: 0 0 1em 0;
@@ -92,122 +72,42 @@ header + .grid-container, header + .container  {
 	}
 }
 
-.socialicon {
-	height: 27px;
-	width: 27px;
-}
-
-
-// Form module
-
-.author {
-	margin-left: 0;
-	margin-top: 30px;
-	@include breakpoint(mobile-portrait) {
-		margin-top: 5px;
-	}
-}
-.bio {
-	margin-top: 30px;
-	h5 {
-		display: inline-block;
-		margin-bottom: 0;
-		margin-top: 0;
-		}
-	
-	.thumbnail {
-		margin-right: 0;
-		img {
-			border-radius: 150px;
-			-webkit-border-radius: 150px;
-			-moz-border-radius: 150px;
-			background: url(http://link-to-your/image.jpg) no-repeat;
-			height: 80px;
-			width: 80px;
-		}
-	}
-	@include breakpoint(tablet) {
-		h5 {
-			margin-left: 10px;
-		}
-		p {
-			margin-left: 10px;
-		}
-		.thumbnail img {
-			height: 70px;
-			width: 70px;
-		}
-	}
-	@include breakpoint(mobile-portrait) {
-		h5 {
-			margin-left: 0;
-		}
-	}	
-}
-.detail {
-	a {
-		text-decoration: none;
-	}
-	h3 {
-		line-height: 32px;
-		margin-bottom: 20px;
-		margin-top: 0;
-		}
-		h3.datetime {
-			margin-bottom: 5px;
-		}
-	h5 {
-		display: block;
-	}
-	iframe.webinar {
-		style: overflow hidden; 
-		scrolling: none;
-	}
+.share {
+	margin: 10px 0 0 0;
+	padding: 0;
 	li {
-		color: #586977;
-		line-height: 22px;
-	}
-	p {
-		color: #586977;
-		line-height: 22px;
-	}
-	p.datetime {
-			margin-top: 0;
+		display: inline-block;
+		padding-left: 15px;
+		a {
+			background: url(../../images/shareicons.png) no-repeat;
+			display: block;
+			height: 28px;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			width: 28px;
 		}
-}
-
-
-.socialicon {
-	height: 27px;
-	width: 27px;
-}
-
-
-
-
-
-
-//Buttons module 
-
-a.button {
-	border: none;
-	background: $lightBlue;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
-	border-radius: 3px;
-	color: #fff;
-	font-family: 'Frutiger Regular', sans-serif;
-	padding: 7px 15px;
-	&:hover {
-		background-color: lighten($lightBlue, 3);
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+	.twitter a {
+		background-position: -57px 0;
+	}
+	.linkedin a {
+		background-position: -114px 0;
 	}
 }
 
-
-
-// Form styles
-
+// Forms
+.whitepaper-form {
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	padding: 20px;
+	.row {
+		margin-bottom: 0;
+	}
+}
 label {
 	clear: both;
 	display: block;
@@ -224,17 +124,39 @@ label {
 		color: #707070;
 		display: inline-block;
 		float: left;
-		text-align: right;
 		font-family: "Frutiger Regular", Arial, sans-serif;
-		font-size: em(14px);
-		padding-right: 10px;
-		width: 35%;
+		font-size: em(12px);
+		font-weight: bold;
+		padding: {
+			top: 7px;
+			right: 10px;
+		}
+		text-align: right;
+		width: 40%;
 
 	}
 	input {
+		border: 1px solid #ddd;
 		box-sizing: border-box;
 		float: left;
-		width: 65%;
+		font-size: em(12px);
+		padding: 5px;
+		width: 60%;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	select {
+		margin-top: 5px;
+	}
+	@include breakpoint(mobile-tablet) {
+		b {
+			padding-bottom: 3px;
+			text-align: left;
+			width: 100%;
+		}
+		input {
+			width: 100%;
+		}
 	}
 	@include breakpoint(tablet) {
 		b {
@@ -243,14 +165,27 @@ label {
 	}
 }
 
+
+//Buttons  
+a.button {
+	border: none;
+	background: $lightBlue;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Frutiger Regular', sans-serif;
+	padding: 7px 15px;
+	&:hover {
+		background-color: lighten($lightBlue, 3);
+	}
+}
 button {
 	@extend a.button;
 	font-size: em(16px);
 	float: right;
 }
-
-
-
 
 
 //Footer modules
@@ -384,51 +319,3 @@ footer {
 		}
 	} 
 }
-
-
-
-// Styleguide specific styles -- *Not for use in production*
-h2.styleguide-heading {
-	border-top: 2px dashed #eee;
-	font-size: em(48px);
-	margin: 1.5em 10px 0.25em 10px !important;
-	padding-top: 0.5em;
-	&:first-child {
-		border-top: none;
-		margin-top: 0.5em !important;
-		padding-top: 0;
-	}
-	@include breakpoint(tablet) {
-		margin: {
-			right: 15px !important;
-			left: 15px !important;
-		}
-	}
-	@include breakpoint(mobile-portrait) {
-		font-size: em(36px);
-		margin: {
-			right: 0 !important;
-			left: 0 !important;
-		}
-	}
-}
-h3.styleguide-heading {
-	font-size: em(28px);
-	margin: 2em 10px 1em 10px !important;
-	border-bottom: 1px solid #ddd;
-	@include breakpoint(tablet) {
-		margin: {
-			right: 10px !important;
-			left: 10px !important;
-		}
-	}
-	@include breakpoint(mobile-portrait) {
-		font-size: em(24px);
-		margin: {
-			right: 0 !important;
-			left: 0 !important;
-		}
-	}
-}
-
-
