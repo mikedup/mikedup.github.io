@@ -2,11 +2,11 @@
 
 // Fonts
 @font-face {
-  	font-family: 'Frutiger Regular';
-  	src: url("../../fonts/FrutigerNext_LT_Regular.eot");
-  	src: url("../../fonts/FrutigerNext_LT_Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/FrutigerNext_LT_Regular.woff") format("woff"), url("../../fonts/FrutigerNext_LT_Regular.ttf") format("truetype");
-  	font-weight: normal;
-  	font-style: normal; 
+    font-family: 'Frutiger Regular';
+    src: url("../../fonts/FrutigerNext_LT_Regular.eot");
+    src: url("../../fonts/FrutigerNext_LT_Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/FrutigerNext_LT_Regular.woff") format("woff"), url("../../fonts/FrutigerNext_LT_Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
 }
 @font-face {
     font-family: 'Karbon Regular';
@@ -16,11 +16,11 @@
     font-style: normal; 
 }
 @font-face {
-  	font-family: 'Karbon Light';
-  	src: url("../../fonts/karbon-light-webfont.eot");
-  	src: url("../../fonts/karbon-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-light-webfont.woff") format("woff"), url("../../fonts/karbon-light-webfont.ttf") format("truetype");
-  	font-weight: normal;
-  	font-style: normal; 
+    font-family: 'Karbon Light';
+    src: url("../../fonts/karbon-light-webfont.eot");
+    src: url("../../fonts/karbon-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/karbon-light-webfont.woff") format("woff"), url("../../fonts/karbon-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
 }
 
 // Em function
@@ -49,36 +49,33 @@ $lightBlue: #00a3d9;
 
 
 body {
-	font-family: 'Frutiger Regular', sans-serif;
+  font-family: 'Frutiger Regular', sans-serif;
   font-size: 16px;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.taft { // Temporarily namespaces base styles to prevent them from affecting non-refactored pages
-
 h1, h2, h3, h4, h5, h6 {
-	color: #35414c;
+  color: #35414c;
   font: {
     family: 'Karbon Light', Helvetica, sans-serif;
     weight: normal;
   }
   line-height: 1.35em;
-  margin: 1em 0;
+  margin: 1em 0 0.5em;
 }
 h2 {
   font: {
     family: 'Karbon Regular', Helvetica, sans-serif;
-    size: em(40px);
+    size: em(42px);
   }
   @include breakpoint(mobile-portrait) {
     font-size: em(26px);
   }
 }
 h3 {
-    font-size: em(30px);
-    
-  }
+  font-size: em(30px);
+}
 h4 {
   font: {
     family: 'Frutiger Regular', sans-serif;
@@ -92,18 +89,25 @@ h5 {
   }
 }
 
-} // End temporary .taft namespace
-
-
+p, li {
+  color: #586977;
+  line-height: 1.5em;
+}
 
 a {
-	color: $lightBlue;
+  color: $lightBlue;
 }
 a:hover {
-	color: darken($lightBlue, 5);
+  color: darken($lightBlue, 5);
 }
 
 // Helper classes
-.centered {
+.-centered {
   text-align: center;
+}
+.-left {
+  float: left;
+}
+.-right {
+  float: right;
 }
