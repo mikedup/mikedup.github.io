@@ -57,7 +57,7 @@ header {
 		&.-left {
 			margin-right: 30px;
 		}
-		&.-left {
+		&.-right {
 			margin-left: 30px;
 		}
 		@include breakpoint(mobile-portrait) {
