@@ -60,6 +60,9 @@ header {
 		&.-left {
 			margin-left: 30px;
 		}
+		@include breakpoint(mobile-portrait) {
+			max-width: 50%;
+		}
 	}
 }
 .article-detail__sidebar {
