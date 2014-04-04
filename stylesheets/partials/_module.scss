@@ -769,6 +769,50 @@ label {
 	}
 }
 
+// Featured resources
+.featured-resources {
+	margin-top: 20px;
+	a {
+		text-decoration: none;
+	}
+	h2 {
+		float: left;
+		font-size: em(30px);
+		margin-bottom: 0px;
+		margin-top: 0;
+	}
+	h2 + a {
+		float: right;
+		margin-top: 12px;
+	}
+	h3 {
+		font-size: em(24px);
+		line-height: 28px;				
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	img {
+		border: 1px solid #ccc;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	p {
+		color: #586977;
+		line-height: 22px;
+		margin-top: 5px;
+		@include breakpoint(mobile-portrait) {
+			margin-bottom: 20px;
+		}
+	}
+	.row {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	@include breakpoint(mobile-portrait) {
+		padding-top: 20px;
+	}
+}
+
 
 //Buttons  
 a.button {
