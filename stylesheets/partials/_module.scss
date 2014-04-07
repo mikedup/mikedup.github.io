@@ -776,9 +776,7 @@ label {
 		text-decoration: none;
 	}
 	h2 {
-		float: left;
 		font-size: em(30px);
-		margin-bottom: 0px;
 		margin-top: 0;
 	}
 	h2 + a {
@@ -805,7 +803,6 @@ label {
 		}
 	}
 	.row {
-		display: inline-block;
 		margin-bottom: 5px;
 	}
 	@include breakpoint(mobile-portrait) {
